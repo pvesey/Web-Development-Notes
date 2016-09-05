@@ -1,0 +1,811 @@
+
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Development</title>
+
+		<meta name="description" content="Introduction to Web Development - HTML">
+		<meta name="author" content="Paul Vesey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Vesey Notes Custom -->
+		<link rel="stylesheet" href="css/veseyNotes.css">
+		
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+
+		<link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+<!--
+% _              _                    _ 
+%| |    ___  ___| |_ _   _ _ __ ___  / |
+%| |   / _ \/ __| __| | | | '__/ _ \ | |
+%| |__|  __/ (__| |_| |_| | | |  __/ | |
+%|_____\___|\___|\__|\__,_|_|  \___| |_|
+%                                       
+-->
+				<section>
+					<h1>Web Development</h1>
+					<h3>Introduction to JavaScript</h3>
+					<p>
+						<small>Paul Vesey</small>
+						<small>Created using <a href="http://lab.hakim.se/reveal-js/">Reveal.js</a></small>						
+					</p>
+					<img class="h250" src="img/jslogo.png">
+				</section>
+
+
+
+
+				<section>
+				<h2>JavaScript</h2>
+				<ul>
+					<li>JavaScript is an object orientated scripting language.</li>
+					<li>All major browsers have a JavaScript interpreter built-in.</li>
+					<li>Because it is built-in, we generally have cross-browser support.  However, not all browsers implement everything in the same way.</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>JavaScript Variables</h2>
+				<ul>
+					<li>JavaScript is a loosely typed language</li>
+					<li>This means that when you declare a variable you do not have to specify its data type</li>
+					<li>Variable scope can be problematic if you do not exercise care.</li>  
+				</ul>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>JavaScript</h2>
+				<ul>
+					<li>JavaScript can be Server-Side or Client Side</li>
+					<li>We will stick to the far more common Client Side.</li>
+					<li>\textbf{JavaScript is not Java}</li>
+				</ul>
+				<p>JavaScript can be implemented three ways</p>
+				<ol>
+					<li>In the header
+					<li>Inline
+					<li>External file
+				</ol>
+				<p>The most common method is by using an external file</p>
+				</section>
+
+
+
+
+				<section>
+				<h2>JavaScript Header Implementation</h2>
+				<p>JavaScript is enclosed in <code>&#60;script&#62;&#60;/script&#62;</code> in HTML</p>
+
+				<pre><code class='js'>
+&#60;head&#62;...
+  &#60;script&#62;
+    function fireAlert()
+      {
+        alert("I am an alert box!");
+      }
+    window.onload=fireAlert();
+  &#60;/script&#62;...
+&#60;/head&#62;
+				</code></pre>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>JavaScript Inline Implementation</h2>
+				<pre><code class='js'>
+&#60;body&#62;...
+ &#60;script&#62;
+   document.write('<h2>Driven by JavaScript</h2>');  
+ &#60;/script&#62;...
+&#60;/body&#62;
+				</code></pre>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>JavaScript External File</h2>
+				<p>Using an external file is the most common way to implement JavaScript.  It also greatly enhances the maintainability of your code.  The syntax for HTML5 is:</p>
+				<pre><code class='js'>
+&#60;script src='js/JavaScript.js'&#62;&#60;/script&#62;
+
+				</code></pre>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>JavaScript Output</h2>
+				<p>JavaScript has three main outputs</p>
+				<ol>
+					<li>On your HTML page</li>
+					<li>Popup boxes; Alerts etc</li>
+					<li>Browser console.</li>
+				</ol>
+				</section>
+
+
+
+
+				<section>
+				<h2>JavaScript Popups</h2>
+				<p>Popups are generally an annoyance to users, and should be used with caution.  There are three types available</p>
+				<ol>
+					<li>Alert Box - Displays Message</li>
+					<li>Confirm Box - OK, Cancel</li>
+					<li>Prompt Box - Entered Text</li>
+				</ol>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>JavaScript Alert Box</h2>
+				<p>The Alert box simply displays a message.  No further work is required.  The example below will stop the page load until the user confirms.</p>
+				<pre><code class='js'>
+&#60;head&#62;...
+  &#60;script&#62;
+    function fireAlert()
+      {
+        alert("I am an alert box!");
+      }
+    window.onload=fireAlert();
+  &#60;/script&#62;...
+&#60;/head&#62;
+
+				</code></pre>
+				</section>
+
+
+
+				<section>
+				<h2>JavaScript Confirm Box</h2>
+				<p>A confirm box allows us to get a binary response; either OK or Cancel.  We can then use this information to do other things. </p>
+
+				<pre><code class='js'>
+var response = confirm('Press OK to continue');
+if (response == true){
+  console.log('User Responded with OK');
+} else {
+  console.log('User Responded with Cancel');
+}
+				</code></pre>
+				</section>
+
+
+
+				<section>
+				<h2>JavaScript Prompt Box</h2>
+				<p>A Prompt Box allows for the return of a string object from the box.  Default values can be set for the response. </p>
+				<pre><code class='js'>
+var response = prompt('Please enter your name', 'Paul Vesey');
+if (response != null && response != ''){
+  console.log(response);
+} 
+				</code></pre>
+				</section>
+
+
+
+
+				<section>
+				<h2>JavaScript Comments</h2>
+				<p>Comments in JavaScript are as follows:</p>
+				<pre><code class='js'>
+// Single or in-line comment
+
+/*
+  Multi-line comments
+*/
+				</code></pre>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>JavaScript Logical Operators</h2>
+				<p>JavaScript has all of the normal logical Operators that we expect to find </p>
+				<ul>
+					<li><code>&&</code> AND operator</li>
+					<li><code>||</code> OR operator</li>
+					<li><code>!</code> NOT operator</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>JavaScript Comparison Operators</h2>
+				<p>JavaScript has all of the normal comparison Operators that we expect to find </p>
+				<ul>
+					<li><code>==</code> Equal to</li>
+					<li><code>===</code> Equal to (value and type)</li>
+					<li><code>!=</code> Not Equal to</li>
+					<li><code>!==</code> Not Equal to (value and type)</li>
+					<li><code>></code> Greater than</li>
+					<li><code><</code> Less than</li>
+					<li><code>>=</code> Greater than or equal to</li>
+					<li><code><=</code> Less than or equal to</li> 
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Comparison Operators Value and Type</h2>
+				<p>As JavaScript is a loosely typed language, we can run into problems with variable types. </p>
+				<ul>
+					<li>We can for instance assign a value of 32 to a variable by entering <code>var x = 32;</code></li>
+					<li>All input from a Prompt box is in the form of a string, so if we had say <code>var num = prompt('Enter a number');</code>, adding <code>x</code> to <code>num</code> would yield unpredictable results.</li>
+					<li>For this reason the <code>===</code> test is important</li>
+				</ul>
+				</section>
+
+				<section>
+					<h2>Casting Variables</h2>
+					<p>The first step to casting, is to check the variable type.  This is done as follows:</p>
+					<pre><code class='js'>
+number = 10;
+typeof number; // returns 'number'
+str = "this is a string"
+typeof str; // returns 'string'
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Casting Variables</h2>
+					<p>Next Cast the variable.</p>
+					<pre><code class='js'>
+val = 10;
+val = String(val);
+typeof val;
+console.log(val);
+val = Number(val);
+typeof val;
+					</code></pre>
+				</section>
+
+
+
+				<section>
+				<h2>Conditional Statement if...else if...else</h2> 
+				<p>Syntax is: </p>
+				<pre><code class='js'>
+if (condition 1) {
+     // code here
+ } else if (condition 2) {
+     // code here
+ } else {
+     // code here 
+ }
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>For Loop</h2>
+				<p>Syntax is: <code>for(initial; final; step){...}</code></p>
+				<pre><code class='js'>
+for (var i = 0; i < 20; i++) {
+     // code here
+ } 
+				</code></pre>
+				<p>Remember to use <code>var</code> when declaring your initial condition.</p>
+				</section>
+
+
+				<section>
+				<h2>Developer Tools</h2>
+				<p>In Chrome: Ctrl+Shift+I</p>
+				<img class='h350' src="img/devtools.JPG">
+				</section>
+
+				<section>
+					<section>
+						<h2>Developer Tools</h2>
+						<p>In Internet Explorer: F12</p>
+						<img class='h300' src="img/IEEventListener.JPG">
+						<p>Note you can preview what your code will look like in older versions of IE by changing the Browser Mode.  It will also send your 	page to the W3C validation service.</p>
+					</section>
+					<section>
+						<img class='h550' src="img/IEEventListener.JPG">
+					</section>
+				</section>
+
+				<section>
+				<h2>Practice</h2>
+				<p>Implement the following:</p>
+				<ul>
+					<li>Use in line JavaScript to write some text to a <code>div</code> on your page</li>
+					<li>Implement an Alert Box in the header that is triggered by <code>window.onload</code></li> 
+					<li>Implement a Prompt box to get the users name and output to the console and the page</li>
+					<li>Implement a Confirm box and output the user choice to the console if it is 'OK'.</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Questions?</h2>
+				</section>
+
+
+
+
+<!--
+% _              _                    ____  
+%| |    ___  ___| |_ _   _ _ __ ___  |___ \ 
+%| |   / _ \/ __| __| | | | '__/ _ \   __) |
+%| |__|  __/ (__| |_| |_| | | |  __/  / __/ 
+%|_____\___|\___|\__|\__,_|_|  \___| |_____|
+%                                           
+-->
+
+
+
+
+				<section>
+				<h2>Event Listeners and Handlers</h2>
+				<ul>
+					<li>Event Listeners are typically synchronous functions or methods that detect events or actions.  Once an event is detected, the listener normally calls a \textbf{Handler} </li>
+					<li>Event Handlers are functions or methods that are called in response to a listener.  This is where the main work is performed</li>
+					<li>Separating Listeners from Handlers allows for greater flexibility and makes maintenance easier</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>JavaScript Listeners and Handlers</h2>
+				<p>A number of approaches have been developed for adding listeners and handlers for web.  Most are now considered poor practice and should be avoided; they are included here as they do persist, in spite of the fact that newer approaches are easier to write and maintain.  For the most part they can be considered as: </p>
+				<ol>
+					<li>In-line with anonymous JavaScript function</li>
+					<li>In-line with named JavaScript function (internal or external JS)</li>
+					<li>DOM Level 2, (no in-line JavaScript)</li>
+				</ol>
+				</section>
+
+
+				<section>
+				<h2>Inline Implementation</h2>
+				<p><b>DO NOT USE</b>: Whilst this approach will work, it is extremely difficult to debug and maintain.  It is normally achieved by adding a listener directly to the HTML element.  Whilst this approach is easy to read and understand, maintenance and debugging is extremely difficult on all but the most simple of websites.</p>
+				<pre><code class='js'>
+&#60;div class='grd12' id='FindMe' onclick='SayHello()'&#62;
+				</code></pre>
+				</section>
+
+				<section>
+				<h2>DOM Level 2 Implementation</h2>
+				<p>The DOM Level 2 implementation is done entirely from JavaScript, with the exception of the element ID which is necessary for to identify the HTML element, in this case 'W3C'  The JavaScript is below:</p>
+				<pre><code class='js'>
+document.getElementById('W3C').addEventListener('click', cngColor, false);
+				</code></pre>
+				</section>
+
+
+				<section>
+				<h2>DOM Level 2 Implementation Explained</h2>
+				<pre><code class='js'>
+document.getElementById('W3C').addEventListener('click', cngColor, false);
+				</code></pre>
+				<ul>
+					<li><code>document.getElementById('W3C'</code>) selects the element that we want to add a listener to.</li>
+					<li><code>.addEventListener('click', cngColor, false);</code> adds an event listener that will call the function <code>chgColor</code> when the user <b>clicks</b> the element.</li>
+					<li>the <b>false</b> option specifies that useCapture is not to be used.  useCapture is a DOM Level 3 option that allows for greater control of how events are dispatched to handlers.  You should specify either <b>true</b> or <b>false</b>.</li>
+				</ul>
+				</section>
+
+
+
+				<section>
+				<h2>And then... Internet Explorer</h2>
+				<p>Older versions of IE do not support <code>addEventListener</code>.  Instead they implement <code>attachEvent</code>.  The JavaScript code is:</p>
+				<pre><code class='js'>
+document.getElementById('W3C').attachEvent('onclick', cngColor);
+				</code></pre>
+				<p>You will also note that <code>click</code> is replaced by <code>onclick</code>, and that the event capture is not implemented.</p>
+				</section>
+
+
+				<section>
+				<h2>And then... Internet Explorer</h2>
+				<p>In order to overcome these inconsistencies, we need to create more robust mechanisms for attaching events to HTML elements.  A typical approach is to develop an addEvent function in JavaScript that will handle both the W3C addEventListener, and the IE attachEvent.  One approach for achieving this is available on Moodle</p>
+				</section>
+
+				<section>
+				<h2>More on Listeners</h2>
+				<p>As you have just seen, we can add/attach Events to HTML elements. We can also <code>removeEventListener</code> and/or <code>detachEvent</code>:</p>
+				</section>
+
+
+				<section>
+				<h2>Practice</h2>
+				<p>Attach click events to an HTML div in order to achieve the following:</p>
+				<ul>
+					<li>Fire an alert message when clicked</li> 
+					<li>Show or hide an image (toggle functionality)</li>
+					<li>Remove an event listener from another HTML element</li>
+				</ul>
+				</section>
+
+
+				<section>
+					<h2>JavaScript Objects</h2>	
+					<p>JavaScript Objects can be created in a number of ways.</p>
+					<pre><code style="js">
+var myObject = new Object();
+    // new instance of Object
+					</code></pre>
+					<p>Instantiate a new Object</p>
+				</section>
+
+				<section>
+					<h2>Object Literal</h2>
+					<p>Object is defined and created at runtime.</p>
+					<pre><code style="js">
+var car = {
+	color: "blue",
+	doors: 4,
+	velocity: 60,
+	faster: function(){
+		return this.velocity + 10;
+	}	
+};
+					</code></pre>				
+				</section>
+
+				<section>
+					<h2>Constructor Function</h2>
+					<p>Create an Object template.</p>
+					<pre><code style="js">
+function car(color, doors, velocity){
+	this.color = color;
+	this.doors = doors;
+	this.velocity = velocity;
+	this.faster = function(){
+		return this.velocity += 10;
+	};	
+};
+					</code></pre>				
+				</section>
+
+
+
+
+				<section>
+					<h2>No Inheritance in JavaScript</h2>
+					<p>JavaScript implements prototyping.  Prototyping allows you to modify an object that has already been instantiated.</p>
+					<pre><code style="js">
+var myCar = new car('red', 2, 220);
+console.log(myCar);
+myCar.faster();
+console.log(myCar);
+car.prototype.stop = function(){
+	return this.velocity = 0;
+};
+var myOtherCar = new car('blue', 4, 100);
+myCar.stop();
+myOtherCar.stop();
+console.log(myCar);
+console.log(myOtherCar);
+					</code></pre>				
+
+				</section>
+
+				<section>
+					<h2>.constructor Property</h2>
+					<p>You can find the constructor function of an object by accessing its 'constructor' property.  This can be useful when used in conjunction with prototyping</p>
+					<pre><code style="js">
+myCar.constructor.prototype.lightOn = function(){
+		return this.lightsOn = true;
+}
+					</code></pre>	
+
+				</section>
+
+				<section>
+					<h2>Adding properties and methods</h2>
+					<p>JavaScript makes it easy to add properties and methods at runtime.</p>
+					<pre><code style="js">
+myCar.seats = 2;
+myCar.brake = function(){
+	return this.velocity -= 10;
+}
+console.log(myCar);
+					</code></pre>
+				</section>
+
+				<section>
+					<section>
+						<h2>Prototyping v Adding Properties and Methods</h2>
+						<p>Depends what you want to do:</p>
+						<p>If you want to add a property and/or method to all instantiated objects, and all future objects, then use prototyping.</p>
+						<p>If you want to effect one or a small number, then add properties and methods.</p>
+					</section>
+		
+					<section>
+						<h2>Ready to run code.</h2>			
+						<pre><code style="js">
+function car(color, doors, velocity){
+	this.color = color;
+	this.doors = doors;
+	this.velocity = velocity;
+	this.faster = function(){
+		return this.velocity += 10;
+	};	
+};
+
+var myCar = new car('red', 2, 220);
+console.log(myCar);
+myCar.faster();
+console.log(myCar);
+car.prototype.stop = function(){
+	return this.velocity = 0;
+};
+var myOtherCar = new car('blue', 4, 100);
+myCar.stop();
+myOtherCar.stop();
+console.log(myCar);
+console.log(myOtherCar);
+
+myCar.seats = 2;
+myCar.brake = function(){
+	return this.velocity -= 10;
+}
+console.log(myCar);
+						</code></pre>
+					</section>
+				</section>
+
+
+				<section>
+					<h2>Variable Scope</h2>
+					<p>JavaScript implements 2 scopes</p>
+					<ol>
+						<li>Local - when variable is declared within a function</li>
+						<li>Global - everywhere else</li>
+					</ol>
+					<p>Note that JavaScript does not implement Block level scope.</p>
+				</section>
+
+
+				<section>
+					<h2>Variable Scope</h2>
+					<p>Run the code below and note that block level scope is not implemented.</p>
+					<pre><code style="js">
+var a = 'Global-a';
+for (var i = 0; i < 5; i++){
+	var b = 'Global-b ';
+	console.log(a, b, i);
+};
+console.log(a);	
+console.log(b);
+console.log(i);
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h2>Variable Scope</h2>
+					<p>Run the code below and note that ommiting <code>var</code> will create a global variable from within a function.</p>
+					<pre><code style="js">
+function myLoop(count){
+	b = 'Global from Function!';
+	var c = 0;
+	console.log(c);
+	for (var i = count; i > 0; i--){
+		console.log(c);
+		c += i;
+	}
+	return c;
+};
+var a = 'Global-a';
+var d = myLoop(5);
+console.log(a);	
+console.log(b);
+console.log(d); // changed order as c will break script
+console.log(c);
+					</code></pre>
+				</section>
+
+ 
+
+
+				<section>
+					<h2>JQuery</h2>
+					<p>JQuery is the most widely used JavaScript Library, by far.</p>
+					<p>It contains a wide range of functions that make working with HTML and CSS much easier</p>
+					<p>From its inception, the principle <i>do more with less</i> has remained a key factor in its popularity</p>
+					<img src="img/jqlogo.jpg">
+				</section>
+
+
+				<section>
+					<h2>JQuery selection</h2>
+					<pre><code style='js'>
+document.getElementByID("idvalue");  // JS id selection
+$(#idvalue);                         // JQuery id selection
+document.getElementByClassName("classname"); // JS class selection
+$(.classname);                               // JQuery class selection
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h2>JQuery selection</h2>
+					<p>Useful Examples</p>
+					<pre><code style='js'>
+$(#idvalue);        // id selection
+$(.classname);      // class selection
+$("div");           // HTML tag selection
+$(*);               // select all elements        
+$("div p.class1");  // combined selection of div and p with a class of class1   
+
+//  More information from API documentation.
+					</code></pre>
+					<a href='https://api.jquery.com/'>https://api.jquery.com/</a>
+				</section>
+
+
+
+
+
+
+<!--
+% ____                 _                   _   _       _            
+%|  _ \ __ _ _ __   __| | ___  _ __ ___   | \ | | ___ | |_ ___  ___ 
+%| |_) / _` | '_ \ / _` |/ _ \| '_ ` _ \  |  \| |/ _ \| __/ _ \/ __|
+%|  _ < (_| | | | | (_| | (_) | | | | | | | |\  | (_) | ||  __/\__ \
+%|_| \_\__,_|_| |_|\__,_|\___/|_| |_| |_| |_| \_|\___/ \__\___||___/
+%                                                                   
+-->
+
+<section>
+	<h2>What is ES6?</h2>
+	<p class="pleft">ES6 is shorthand for ECMAScript 2015.  ECMA => European Computer Manufacturer's Association</p>
+	<p class="pleft">It is called ES6, because its predecessor was ES5..  (ES1 was published in June 1997)</p>
+	<p class="pleft">JavaScript, JScript and ActionScript are implementaitons of ECMAScript</p>
+	<p class="pleft">ES6 is not fully supported by browsers at this time.  Current status can be reviewed at <a href="http://kangax.github.io/compat-table/es6/">http://kangax.github.io/compat-table/es6/</a></p>
+</section>
+
+
+
+<section>
+	<h2>Using ES6 now</h2>
+	<p class="pleft">ES6 introduces some powerful features that can help us now.  Furthermore, ES6 support is improving all of the time.</p>
+	<p class="pleft">To use ES6 now, we can turn to babel.js to run cross-compilation to ES5</p>
+	<p class="pleft">More information from <a href="https://babeljs.io/">https://babeljs.io/</a></p>
+	<img class="h200" src="img/babel.png">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+<h2>Good Practice JavaScript</h2>
+<p>JavaScript has three main outputs</p>
+<ol>
+  	<li>Use JSLint</li>
+  	<li>OS boxes, Alerts etc</li>
+  	<li>Browser console.</li>
+</ol>
+</section>
+
+
+
+
+<section>
+<h2>Functions JavaScript</h2>
+<p>JavaScript has three main outputs</p>
+<ol>
+	<li>Functions</li> 
+	<li>Anonymous Functions</li>
+	<li>Browser console.</li>
+</ol>
+</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
+
+
+

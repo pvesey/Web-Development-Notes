@@ -1,0 +1,914 @@
+
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Development</title>
+
+		<meta name="description" content="Introduction to Web Development - HTML">
+		<meta name="author" content="Paul Vesey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+
+		<link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Web Development</h1>
+					<h3>Introduction to HTML</h3>
+					<p>
+						<small>Paul Vesey</small>
+						<small>Created using <a href="http://lab.hakim.se/reveal-js/">Reveal.js</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>&#60;title&#62;</h2>
+				<p>the &#60;title&#62; tag encompass the site title to display in the browser tab. It is also read by robots when indexing your site.  It is contained with the &#60;head&#62; </p>
+					<pre><code class="hljs" data-trim contenteditable>
+						<title> ... </title>
+					</code></pre>
+				</section>
+
+
+				<section>
+				<h2>Useless/Useful Information</h2>
+				<p>Set your ''Folder Options'' to show all files and file extensions in Windoze.</p>
+				<img height=400px src="img/folderoptions.png">
+				</section>
+
+				<section>
+				<h2>Hypertext Markup Language</h2>
+				<ul>
+					<li>Standardized form of organizing text so that it can be rendered by a browser</li>
+					<li>php, Javascript etc attempt to sent HTML to the browser</li>
+					<li>HTML5 is the most recent version, but version 4 persists</li>
+				</ul>
+				<h3>We will use version 5 only</h3>
+				</section>
+
+				<section>
+				<h2>HTML5 Document Structure</h2>
+				<pre><code class="html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta http-equiv='Content-Type' content='text/html; charset=utf-8'/&gt;
+	&lt;title>My first HTML5 document&lt;/title&gt;
+&lt;/head&gt;
+	&lt;body&gt;
+	..........
+	&lt;/body&gt;
+&lt;/html&gt;
+				</code></pre>
+				</section>
+
+
+
+				<section>
+				<h2>Doctype</h2>
+				<p>Doctype must be the first item in the document.  It is not an HTML tag, it instructs the browser on the version of HTML to use.</p>
+				<pre><code>
+&lt;!doctype html ....&gt;
+				</code></pre>
+				<p>HTML5 is the short version...</p>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>&#60;html&#62;</h2>
+				<p>the <code>&#60;html&#62;</code> opening and closing tags tell the browser that the encompassed text is formatted in HTML.</p>
+				<pre><code class="html">
+&lt;html&gt;
+...
+&lt;/html&gt;
+				</code></pre>
+				<p>You can also specify attributes such as <code>lang='en'</code>.  This attribute can be useful for assistive technologies</p>
+				</section>
+
+
+
+				<section>
+				<h2>&#60;head&#62;</h2>
+				<p>the <code>&#60;head&#62;</code> opening and closing tags encompass information and instructions to the browser on how to load and render the webpage.  The contents of the <code>&#60;head&#62;</code> section is not rendered in the browser window.</p>
+				<pre><code class="html">
+&lt;head&gt;
+...
+&lt;/head&gt;
+				</code></pre>
+				<p>The <code>&#60;head&#62;</code> will contain the site title to display on the browser tab.
+				It will also contain links to CSS and JavaScript resources.</p>
+				</section>
+
+
+
+				<section>
+				<h2>&#60;title&#62;</h2>
+				<p>the <code>&#60;title&#62;</code> tag encompass the site title to display in the browser tab. It is also read by robots when indexing your site.  It is contained with the <code>&#60;head&#62;</code></p>
+				<pre><code class="html">
+&lt;title&gt;
+...
+&lt;/title&gt;
+				</code></pre>
+				</section>
+
+
+
+				<section>
+				<h2>&#60;meta&#62;</h2>
+				<p>the <code>&#60;meta&#62;</code> tag encompass information about the website for browsers and robots.  Typical data would be author, description, keywords and charset. <code>&#60;meta&#62;</code> does not have a closing tag.</p>
+				<pre><code class="html">
+&lt;meta name=''...'' content=''...'' &gt;
+				</code></pre>
+				<p>Metadata is data about data.  If you have a document in Word, the contents of the file is the data, metadata would  be additional information such as the file size.</p>
+				</section>
+
+
+
+				<section>
+				<h2>&#60;body&#62;</h2>
+				<p>the <code>&#60;body&#62;</code> tags encompass html that the browser is expected to render and present to the user. The HTML5 standard greatly increased the capabilities of the <code>&#60;body&#62;</code> tag, in particular <i>Global</i> and <i>Event Attributes</i>.</p>
+				<pre><code class="html">
+&lt;body&gt;
+...
+&lt;/body&gt;
+				</code></pre>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>Inside &#60;body&#62; in HTML5</h2>
+				<p>Once inside the <code>&#60;body&#62;</code> section, HTML5 provides a number of tags that allow us to construct the the web page in a consistent manner.  These are:</p>
+				<pre><code class="html">
+&#60;header&#62;...&#60;/header&#62;
+&#60;nav&#62;...&#60;/nav&#62;
+&#60;article&#62;...&#60;/article&#62;
+&#60;aside&#62;...&#60;/aside&#62;
+&#60;section&#62;...&#60;/section&#62;
+&#60;footer&#62;...&#60;/footer&#62;
+				</code></pre>
+				<p>This is a considerable improvement over HTML4, where each of these items would typically been enclosed with a <code>&#60;div&#62;</code>, or division.</p>
+				</section>
+
+
+
+
+				<section>
+				<h2>header / nav / article / aside / section / footer</h2>
+					<ul>
+						<li><code>&#60;header&#62;</code> Contains the site headers, often banner images and the like</li>
+						<li><code>&#60;nav&#62;</code> Contains navigation elements such as a menu</li>
+						<li><code>&#60;article&#62;</code> Contains a self contained composition, such as news article.</li>
+						<li><code>&#60;aside&#62;</code> Contains information that can be left out or ignored without affecting the composition of the article.  This would typically be advertising.</li>
+						<li><code>&#60;section&#62;</code> Contains a generic section of a composition or document.</li>
+						<li><code>&#60;footer&#62;</code> Contains the site footer.  Typically contains contact or copyright information.</li>
+					</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Other Major HTML Elements</h2>
+					<ul>
+						<li><code>&#60;p&#62;...&#60;/p&#62;</code> Paragraph</li>
+						<li><code>&#60;ol&#62;...&#60;/ol&#62;</code> Ordered List (typically, numbered)</li>
+						<li><code>&#60;ul&#62;...&#60;/ul&#62;</code> Unordered List</li>
+						<li><code>&#60;li&#62;...&#60;/li&#62;</code> List Item</li>
+						<li><code>&#60;table&#62;...&#60;/table&#62;</code> Table</li>
+						<li><code>&#60;tr&#62;...&#60;/tr&#62;</code> Table Row</li>
+						<li><code>&#60;li&#62;...&#60;/th&#62;</code> Table Headings (column headings)</li>
+						<li><code>&#60;td&#62;...&#60;/td&#62;</code> Table data (or cell)</li>
+						<li><code>&#60;a&#62;...&#60;/a&#62;</code> Anchor</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Minor Tags</h2>
+					<table>
+						<tr>
+							<th>Tag</th><th>Function</th>
+						</tr>
+						<tr>
+							<td>q</td><td>Short Quotations</td>
+						</tr>
+						<tr>
+							<td>blockquote</td><td>Long Quotations</td>
+						</tr>
+						<tr>
+							<td>abbr</td><td>Abbreviation</td>
+						</tr>
+						<tr>
+							<td>address</td><td>Address</td>
+						</tr>
+						<tr>
+							<td>cite</td><td>Citation</td>
+						</tr>
+					</table>
+
+				</section>
+
+
+				<section>
+					<h2>Minor Tags</h2>
+					<table>
+						<tr>
+							<th>Tag</th><th>Function</th>
+						</tr>
+						<tr>
+							<td>code</td><td>Computer Code</td>
+						</tr>
+						<tr>
+							<td>kbd</td><td>Keyboard Input</td>
+						</tr>
+						<tr>
+							<td>samp</td><td>Computer Output</td>
+						</tr>
+						<tr>
+							<td>var</td><td>Variable</td>
+						</tr>
+						<tr>
+							<td>pre</td><td>Preformatted text</td>
+						</tr>
+					</table>
+
+				</section>
+
+
+
+
+
+
+
+				<section>
+				<h2>Headings &#60;h1&#62; to &#60;h6&#62;</h2>
+				<ul>
+					<li>&#60;h1&#62;...&#60;/h1&#62; Headings must be enclosed in opening and closing tags</li>
+					<li>&#60;h1&#62; to &#60;h6&#62; Defines a hierarchy of importance.  It is not intended as styling</li>
+					<li>When used in conjunction with the HTML5 &#60;section&#62; tag, difficulties may arise.</li>
+					<li>The &#60;h1&#62; tag is normally indexed by robots, and therefore should contain the most important information on your page.  It is generally a bad idea to use images for headlines.</li>
+					<li>The &#60;h1&#62; to &#60;h6&#62; tags provide additional structure to page for robots, making them easier for robots to index.</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Tables</h2>
+				<p>Tables are constructed using a combination of tags organized in a specific manner.</p>
+				<ul>
+					<li>&#60;table&#62;...&#60;/table&#62; encompass all of the elements that define a particular table</li>
+					<li>&#60;tr&#62;...&#60;/tr&#62; Is then used to define a table row</li>
+					<li>&#60;th&#62;...&#60;/th&#62; Is used to define each column heading.</li>
+					<li>&#60;td&#62;...&#60;/td&#62; Is used to define column data.</li>
+				</ul>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>Tables</h2>
+				<p>Note the nested nature of the markup.</p>
+<pre><code class="html">
+<table>
+   <tr>
+      <th>Firstname</th>
+      <th>Surname</th>
+   </tr>
+   <tr>
+      <td>Anna</td>
+      <td>Conda</td>
+   </tr>
+</table>
+				</code></pre>
+				<img src="img/table.jpg">
+				</section>
+
+
+
+				<section>
+				<h2>Anchors &#60;a&#62;</h2>
+				<p>Anchors <code>&#60;a&#62;</code>, are used extensively in HTML for creating hyperlinks.</p>
+				<ul>
+					<li>Anchors follow the typical <code>&#60;a&#62;...&#60;/a&#62;</code> structure; however most of the work is done in the opening tag.</li>
+					<li>The text or image enclosed in the <code>&#60;a&#62;...&#60;/a&#62;</code> tags is rendered in the browser.</li>
+				</ul>
+				<p>Typical usage is:</p>
+				<pre><code class="html">
+<a href='home.html'>Home</a>
+<a href='mailto:paul.vesey@lit.ie.'>email Paul</a>
+<a href='tel:061208208'>061-208208</a>
+				</code></pre>
+				</section>
+
+
+
+
+				<section>
+				<h2>Practice</h2>
+				<img height=500px src="img/tut1pg1.JPG">
+				</section>
+
+
+				<section>
+				<h2>Practice</h2>
+				<img height=500px src="img/tut1pg2.JPG">
+				</section>
+
+
+
+				<section>
+				<h2>Practice</h2>
+				<img height=500px src="img/tut1pg3.JPG">
+				</section>
+
+				<section>
+				<h2>Questions?</h2>
+				</section>
+
+
+
+
+<!-- _              _                    ____
+    | |    ___  ___| |_ _   _ _ __ ___  |___ \
+    | |   / _ \/ __| __| | | | '__/ _ \   __) |
+    | |__|  __/ (__| |_| |_| | | |  __/  / __/
+    |_____\___|\___|\__|\__,_|_|  \___| |_____
+-->
+
+
+<section>
+<h2>Useless/Useful Information XML</h2>
+<p>Microsoft Office Documents are really XML.  Change the file extension to .zip and open it up to have a look.</p>
+<img height=300px src="img/excelxml.jpg">
+<p>Inside a Microsoft Excel File</p>
+</section>
+
+
+
+<section>
+<h2>&#60;div&#62; Division</h2>
+<p>Used to create divisions and/or sections</p>
+
+<ul>
+	<li><code>&#60;div&#62;</code>, when used in conjunction with CSS, forms the basis of website layout.</li>
+	<li>each <code>&#60;div&#62;</code> is placed in a structure that allows for the logical division of the webpage.</li>
+	<li>every <code>&#60;div&#62</code>; should be given a unique id.</li>
+	<li>every <code>&#60;div&#62;</code> should be closed with a <code>&#60;/div&#62;</code>.</li>
+</ul>
+<pre>
+<code><div id='this'>...</div>
+</code></pre>
+
+<p>We are going to spend a lot more time on <code>&#60;div&#62;</code> when dealing with CSS</p>
+</section>
+
+
+
+<section>
+<h2>&#60;span&#62;</h2>
+<p>Used to create in-line sections</p>
+<ul>
+	<li><code>&#60;span&#62;</code> is often used to style elements contained within a <code>&#60;div&#62;</code></li>
+	<li><code>&#60;span&#62;</code> is used extensivly with CSS.</li>
+	<li>every <code>&#60;span&#62;</code> should be closed with a <code>&#60;/span&#62;</code>.</li>
+	<li>like <code>&#60;div&#62;</code>, it could be considered as a structural element</li>
+</ul>
+</section>
+
+
+
+
+<section>
+<h2>&#60;img&#62; Image</h2>
+Used to insert raster (bitmap) images into HTML.  It does not have a closing tag.
+<pre><code class="html">
+&lt;img src='moon.jpg' alt='NASA image of footprint on the moon'&gt;
+
+</code></pre>
+<img height=300px src='img/moon.jpg' alt='NASA image of footprint on the moon'>
+</section>
+
+
+
+<section>
+<h2>&#60;canvas&#62;</h2>
+<ul>
+	<li>Used to draw directly into the browser.</li>
+	<li>It should always be used with an id</li>
+	<li>The image is constructed in a script and sent to the canvas.</li>
+	<li>canvas does not maintain individual id for its elements, so is not as flexible as svg.</li>
+	<li>it is faster than svg.</li>
+</ul>
+<p>Some really cool experiments are available at <a href="http://net.tutsplus.com/articles/web-roundups/21-ridiculously-impressive-html5-canvas-experiments/">http://net.tutsplus.com/articles/web-roundups/21-ridiculously-impressive-html5-canvas-experiments/</a></p>
+</section>
+
+<section>
+		<section>
+		<h2>&#60;canvas&#62;</h2>
+		<pre><code class="html">
+		<canvas id="canvas1" width="400" height="300"
+		style="border:1px solid #000000;"></canvas>
+		<script type="text/javascript">
+		    var canvas=document.getElementById('canvas1');
+		    var ctx=canvas.getContext('2d');
+		    ctx.fillStyle='#FF0000';
+		    ctx.fillRect(10,10,380,280);
+		    ctx.fillStyle='#00FF00';
+		    ctx.fillRect(10,10,190,140);
+		    ctx.fillStyle='#0000FF';
+		    ctx.fillRect(200,150,95,70);
+		</script>
+		</code></pre>
+		</section>
+
+		<section>
+			<object width="1200" height="600" data="gcar/gcar.html"></object>
+		</section>
+</section>
+
+
+<section>
+<h2>&#60;svg&#62; Scalable Vector Graphics</h2>
+<ul>
+	<li>Like canvas, it is used to draw directly into the browser.</li>
+	<li>Unlike canvas, each element that makes up the image has its own id</li>
+	<li>The image is constructed in a script and drawn to the svg container.</li>
+	<li>As each element is part of the DOM, it can be slow to render.</li>
+	<li>Image will not degrade when scaled.</li>
+	<li>quite easy to set-up for responsive design</li>
+ </ul>
+</section>
+
+
+
+
+<section>
+<h2>&#60;svg&#62; Scalable Vector Graphics</h2>
+<pre><code class="html">
+<svg width="640" height="480"
+  xmlns="http://www.w3.org/2000/svg"
+  style="border:1px solid #000000;">
+ <!-- Created with SVG-edit -
+    http://svg-edit.googlecode.com/ -->
+ <g>
+ <title>Full Size Design</title>
+  ...
+  ...
+ </g>
+</svg>
+</code></pre>
+</section>
+
+
+
+<section>
+<h2>&#60;svg&#62; Scalable Vector Graphics</h2>
+<pre><code class="html">
+ ...
+ <text transform="matrix(1.2,0,0,1,63.9,0) "
+    xml:space="preserve" text-anchor="middle"
+    font-family="serif" font-size="24"
+    id="fd_1" y="51" x="94" stroke-width="0"
+    stroke="#000000" fill="#000000">
+    This is an SVG created at</text>
+ <rect id="fd_8" height="113" width="186"
+    y="351" x="418" stroke-width="0"
+    stroke="#000000" fill="#ff007f"/>
+...
+
+</code></pre>
+</section>
+
+
+
+
+
+<section>
+<section>
+	<h2>&#60;video&#62;</h2>
+	<p>Standard way to put video into HTML documents</p>
+	<p>Used in conjunction with the &#60;source&#62; tag, which will specify details of the media asset.</p>
+	<pre><code>
+&lt;video width='640' height='480' controls&gt;
+	&lt;source src='edhd512.mp4' type='video/mp4'&gt;
+	&lt;source src='edhd.ogv' type='video/ogg'&gt;
+	Your browser does not support HTML5 video.
+&lt;/video&gt;
+	</code></pre>
+	</section>
+	<section>
+		<h2>Live Demo</h2>
+		<video width='640' height='480' controls>
+			<source src='media/edhd512.mp4' type='video/mp4'>
+			<source src='media/edhd.ogv' type='video/ogg'>
+			Your browser does not support HTML5 video.
+		</video>
+	</section>
+	<section>
+		<h2>Other attributes</h2>
+		<pre><code>
+&lt;..autoplay..&gt;
+&lt;..poster='posterImage.jpg'..&gt;
+&lt;..preload='none'..&gt;
+Your browser does not support HTML5 video.
+Download video &lt;a href="link_to_video"&gt;here&lt;/a&gt;
+		</code></pre>
+		<ul>
+			<li><code>Autoplay</code> will start the video automatically; not recommended</li>
+			<li><code>poster</code> will place an image in the video player while loading</li>
+			<li><code>preload='none'</code> tells the browser not to load the video untill the user click the play button</li>
+		</ul>
+	</section>
+</section>
+
+
+
+<section>
+	<section>
+	<h2>&#60;audio&#62;</h2>
+	<p>Standard way to put audio into HTML documents</p>
+	<p>Used in conjunction with the &#60;source&#62; tag, which will specify details of the media asset</p>
+	<pre><code>
+&lt;audio controls&gt;
+    &lt;source src='Fanfare.mp3' type='audio/mpeg'&gt;
+    &lt;source src='Fanfare.ogg' type='audio/ogg'&gt;
+    Your browser does not support HTML5 audio.
+    Go get a better one!
+&lt;/audio&gt;
+	</code></pre>
+	</section>
+	<section>
+	<h2>Live Demo</h2>
+	<audio controls>
+	    <source src='media/Fanfare.mp3' type='audio/mpeg'>
+	    <source src='media/Fanfare.ogg' type='audio/ogg'>
+	    Your browser does not support HTML5 audio.
+	    Go get a better one!
+	</audio>
+
+	</section>
+</section>
+
+
+
+<section>
+	<section>
+	<h2>&#60;iframe&#62;</h2>
+	<p>Specifies an inline frame, it is used to embed one document into another.  One of the most common usages is to imbed <a href="http://youtube.com">YouTube</a> video into documents.</p>
+	<pre><code>
+<iframe width='640' height='480'
+    src='http://www.youtube.com/embed/-ZJDNSp1QJA'
+    allowfullscreen>
+ </iframe>
+	 </code></pre>
+	</section>
+	<section>
+	<h2>Live Demo</h2>
+		<iframe width='640' height='480'
+	    src='http://www.youtube.com/embed/-ZJDNSp1QJA'
+	    allowfullscreen>
+	 	</iframe>
+	</section>
+</section>
+
+<section>
+	<section>
+	<h2>Canvas and Image Combined</h2>
+	<p>Canvas is really useful for manipulating images.  Typical usages are:</p>
+	<ul>
+		<li>Cropping</li>
+		<li>Resizing</li>
+		<li>Shadows</li>
+		<li>Transformations</li>
+		<li>Effects</li>
+	</ul>
+	<p>The following examples use image by kallerna, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=11089202">https://commons.wikimedia.org/w/index.php?curid=11089202</a></p>
+	</section>
+
+	<section>
+		<h2>Original Image</h2>
+		<img src="img/2010Shakedown.jpg" height="500">
+	</section>
+	<section>
+		<h2>Scaled into canvas</h2>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var orig = $("#orig");
+				var origcontext = orig.get(0).getContext("2d");
+
+				var origimage = new Image();
+				origimage.src = "img/2010Shakedown.jpg";
+				$(origimage).load(function() {
+					origcontext.drawImage(origimage, 0, 0, 660, 440);
+				});
+			});
+		</script>
+		<canvas id="orig" width="660" height="440">
+				Your browser does not support canvas
+		</canvas>
+	</section>
+
+	<section>
+		<h2>Crop and Zoom</h2>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var crop = $("#crop");
+				var cropcontext = crop.get(0).getContext("2d");
+
+				var cropimage = new Image();
+				cropimage.src = "img/2010Shakedown.jpg";
+				$(cropimage).load(function() {
+					cropcontext.drawImage(cropimage, 1500,1100,1320,880, 0, 0, 660, 440);
+				});
+			});
+		</script>
+		<canvas id="crop" width="660" height="440">
+				Your browser does not support canvas
+		</canvas>
+	</section>
+
+
+
+
+	<section>
+		<h2>Flip</h2>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var flip = $("#flip");
+				var flipcontext = flip.get(0).getContext("2d");
+
+				var flipimage = new Image();
+				flipimage.src = "img/2010Shakedown.jpg";
+				$(flipimage).load(function() {
+					flipcontext.translate(660,0);
+					flipcontext.scale(-1, 1);
+					flipcontext.drawImage(flipimage, 0, 0, 660, 440);
+				});
+			});
+		</script>
+		<canvas id="flip" width="660" height="440">
+				Your browser does not support canvas
+		</canvas>
+	</section>
+
+
+	<section>
+		<h2>Invert Colors</h2>
+		<canvas id="invert" width="660" height="440">
+				Your browser does not support canvas
+		</canvas>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var invert = $("#invert");
+				var invertctx = invert.get(0).getContext("2d");
+
+				var invertimage = new Image();
+				invertimage.src = "img/2010Shakedown.jpg";
+				$(invertimage).load(function() {
+
+					invertctx.drawImage(invertimage, 0, 0, 660, 440);
+
+					var imageData = invertctx.getImageData(0, 0, 660, 440);
+					var pixels = imageData.data;
+					var numPixels = pixels.length;
+
+					// Clear the image
+					invertctx.clearRect(0, 0, invert.width(), invert.height());
+
+					// Access and change pixel values
+					for (var i = 0; i < numPixels; i++) {
+						pixels[i*4] = 255-pixels[i*4]; // Red
+						pixels[i*4+1] = 255-pixels[i*4+1]; // Green
+						pixels[i*4+2] = 255-pixels[i*4+2]; // Blue
+					};
+
+					// Draw image data to the canvas
+					invertctx.putImageData(imageData, 0, 0);
+
+				});
+			});
+		</script>
+
+	</section>
+
+	<section>
+		<h2>Grayscale</h2>
+		<canvas id="gray" width="660" height="440">
+				Your browser does not support canvas
+		</canvas>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var gray = $("#gray");
+				var grayctx = gray.get(0).getContext("2d");
+
+				var grayimage = new Image();
+				grayimage.src = "img/2010Shakedown.jpg";
+				$(grayimage).load(function() {
+
+					grayctx.drawImage(grayimage, 0, 0, 660, 440);
+
+					var imageData = grayctx.getImageData(0, 0, 660, 440);
+					var pixels = imageData.data;
+					var numPixels = pixels.length;
+
+					// Clear the image
+					grayctx.clearRect(0, 0, gray.width(), gray.height());
+
+					// Access and change pixel values
+					for (var i = 0; i < numPixels; i++) {
+						var average = (pixels[i*4]+pixels[i*4+1]+pixels[i*4+2])/3;
+						pixels[i*4] = average; // Red
+						pixels[i*4+1] = average; // Green
+						pixels[i*4+2] = average; // Blue
+					};
+
+					// Draw image data to the canvas
+					grayctx.putImageData(imageData, 0, 0);
+
+				});
+			});
+		</script>
+	</section>
+
+
+	<section>
+		<h2>Pixelation</h2>
+		<canvas id="pixelate" width="660" height="440">
+				Your browser does not support canvas
+		</canvas>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var pixelate = $("#pixelate");
+				var pixelatectx = pixelate.get(0).getContext("2d");
+				var pixelateImg = new Image();
+				pixelateImg.src = "img/2010Shakedown.jpg";
+				$(pixelateImg).load(function() {
+					pixelatectx.drawImage(pixelateImg, 0, 0, 660, 440);
+
+					var imageData = pixelatectx.getImageData(0, 0, 660, 440);
+					var pixels = imageData.data;
+
+					// Clear the image
+					pixelatectx.clearRect(0, 0, 660, 440);
+
+					// Number of tiles
+					var numTileRows = 44;
+					var numTileCols = 66;
+
+					// Dimensions of each tile
+					var tileWidth = imageData.width/numTileCols;
+					var tileHeight = imageData.height/numTileRows;
+
+					// Loop through each tile
+					for (var r = 0; r < numTileRows; r++) {
+
+						for (var c = 0; c < numTileCols; c++) {
+							var x = (c*tileWidth)+(tileWidth/2);
+							var y = (r*tileHeight)+(tileHeight/2);
+
+							// Use Math.floor to convert the pixel positions to integers
+							var pos = (Math.floor(y)*(imageData.width*4))+(Math.floor(x)*4);
+
+							var red = pixels[pos];
+							var green = pixels[pos+1];
+							var blue = pixels[pos+2];
+
+							pixelatectx.fillStyle = "rgb("+red+", "+green+", "+blue+")";
+
+							// Draw the pixelated rectangle
+							pixelatectx.fillRect(x-(tileWidth/2), y-(tileHeight/2), tileWidth, tileHeight);
+
+						};
+					};
+				});
+			});
+		</script>
+
+	</section>
+
+</section>
+
+
+
+
+<section>
+<h2>Sublime Text</h2>
+<ul>
+	<li>Press Mouse Wheel for Vertical Selection</li>
+	<li>Use 'Tab' for autocomplete</li>
+	<li>Hold ctrl key for multi selection</li>
+	<li>Alt-Shift-W to wrap selected text in a tag</li>
+	<li>Use '&ltl' to insert loreum</li>
+</ul>
+</section>
+
+
+
+
+<section>
+<h2>Credits</h2>
+<p>Presentation Framework <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a></p>
+<p>Code Syntax Highlights <a href="https://highlightjs.org/">highlights.js</a></p>
+<h2>References</h2>
+<p>Foundation HTML5 Canvas by Rob Hawkes, 2011, ISBN 978-1430232919</p>
+</section>
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
+
+
+
+<pre><code class="html">...</code></pre>
+
+
+
+%Headings are treated as a hierarchy.  They are not styling
+%It's complex..
+%Explicit and Implicit Sectioning
+
+%\href{https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document}{Headings on Mozilla}
+%\href{http://www.vesey.co.nf/index.php}{http://www.vesey.co.nf/index.php}

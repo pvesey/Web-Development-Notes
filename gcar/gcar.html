@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Edited by Paul Vesey.. removed google stuff  and paypal donate-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="ga/gcar.css">
+    <title>HTML5 Genetic Algorithm 2D Car Thingy - Chrome recommended</title>
+  </head>
+  <body id='gcar'>
+
+<section>    
+	<canvas id="mainbox" width="800" height="400"></canvas>
+    <div id="graphholder">
+      <canvas id="graphcanvas" width="400" height="250"></canvas>
+      <div class="scale" id="s100">250</div>
+      <div class="scale" id="s75">187</div>
+      <div class="scale" id="s50">125</div>
+      <div class="scale" id="s25">62</div>
+      <div class="scale" id="s0">0</div>
+    </div>
+    <div id="minimapholder">
+      <div id="minimapfog"></div>
+      <canvas id="minimap" width="800" height="200"></canvas>
+      <div id="minimapcamera"></div>
+      <div id="topscoreholder">
+        <input type="button" value="View top replay" onclick="cw_toggleGhostReplay(this)" /><br />
+      <div id="topscores"></div>
+    </div>
+    </div>
+    <div id="debug"></div>
+    <div id="data">
+      <div id="generation"></div>
+      <div id="population"></div>
+      <div id="distancemeter"></div>
+      <div id="health"></div>
+      <div id="cars"></div>
+    </div>
+    <div name="minimapmarker" class="minimapmarker"></div>
+    <div name="healthbar" class="healthbar" onclick="cw_setCameraTarget(this.car_index)">
+      <div name="health" class="health"></div>
+      <div name="healthtext" class="healthtext"></div>
+    </div>
+
+    <script src="lib/seedrandom.js"></script>
+    <script src="lib/box2d.js"></script>
+    <script src="ga/ghost.js"></script>
+    <script src="ga/path.js"></script>
+    <script src="ga/cawro.js"></script>
+    <script src="ga/graphs.js"></script>
+</section>
+  </body>
+</html>

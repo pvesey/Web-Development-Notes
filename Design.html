@@ -1,0 +1,1267 @@
+
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Development</title>
+
+		<meta name="description" content="Introduction to Web Development - CSS">
+		<meta name="author" content="Paul Vesey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Vesey Notes Custom -->
+		<link rel="stylesheet" href="css/veseyNotes.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="notesJS/DesignSupport.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+
+		<link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+		
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+
+
+
+<!--
+% _              _                    _ 
+%| |    ___  ___| |_ _   _ _ __ ___  / |
+%| |   / _ \/ __| __| | | | '__/ _ \ | |
+%| |__|  __/ (__| |_| |_| | | |  __/ | |
+%|_____\___|\___|\__|\__,_|_|  \___| |_|
+%                                       
+-->
+
+	<section>
+				<section>
+				<h2>Website Evaluation</h2>
+				<ol>
+					<li>First Impressions
+					<li>Navigation</li>
+					<li>Content</li>
+					<li>Attractors</li>
+					<li>Findability</li>
+					<li>Making Contact</li>
+					<li>Browser Compatability</li>
+					<li>Knowledge of Users</li>
+					<li>User Satisfaction</li>
+					<li>Other Useful Information</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+
+
+				<section>
+				<h2>First Impressions</h2>
+				<ol>	
+					<li>URL (Intuitive) </li>
+					<li>Download time </li>
+					<li>Look and feel </li>
+					<li>Need to download software </li>
+					<li>Home page on one screen (above the fold) - n.</li>
+					<li>Unique Selling Point (USP) or Value Proposition</li>
+					<li>Ability to take action (Key action point – KAP)</li>
+					<li>Feeling of wanting more</li>
+					<li>Contact details</li>
+					<li>Credential validation</li>
+					<li>Statement from management</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+				<section>
+				<h2>Navigation</h2> 
+				<ol>	
+					<li>Ease of use</li>
+					<li>Site map</li>
+					<li>Return to Home Page from any page</li>
+					<li>Internal search engine</li>
+					<li>Internal links</li>
+					<li>Broken links</li>
+					<li>Text as well as graphic links (ALT tags)</li>
+					<li>Navigational links visible</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p></section>
+
+
+
+
+				<section>
+				<h2>Content</h2>
+				<ol>	
+					<li>Useful information</li>
+					<li>Degree of substantiated information</li>
+					<li>Level of interaction</li>
+					<li>Use of graphics, animation and sound</li>
+					<li>Reviews, testimonials and certifications</li>
+					<li>Content in digestible quantity</li>
+					<li>Up-To-Date</li>
+					<li>Available in Multiple Languages</li>
+					<li>Accessibility for disabled people</li>
+					<li>Terms and conditions </li>
+					<li>FAQ’s</li>
+					<li>Availability of follow up discussion</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+				<section>
+				<h2>Attractors</h2>
+				<ol>	
+					<li>Competitions</li>
+					<li>Special Offers</li>
+					<li>Freebies</li>
+					<li>Breaking News</li>
+					<li>Providing External links</li>
+					<li>Newsletter</li>
+					<li>Other (Specify)</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+
+				<section>
+				<h2>Findability</h2>
+				<ol>	
+					<li>Intuitive URL</li>
+					<li>Intuitive keywords</li>
+					<li>Use of Meta tags</li>
+					<li>Use of frames (bad idea)</li>
+					<li>On-line advertising</li>
+					<li>On-line recommend a friend</li>
+					<li>Partner and affiliate sites</li>
+					<li>Off-line advertising</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+
+
+
+				<section>
+				<h2>Making Contact</h2>
+				<ol>	
+					<li>E-mail and other details visible</li>
+					<li>Response time to inquiries (automated or personal)</li>
+					<li>Use of on-line forms</li>
+					<li>Telephone contact numbers provided</li>
+					<li>Telephone call back offered</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+
+
+
+				<section>
+				<h2>Browser Compatability</h2>
+				<ol>
+					<li>IE, Chrome, Firefox, Safari, Opera </li>
+					<li>Mobile</li>
+					<li>Tablet</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+
+
+
+
+
+				<section>
+				<h2>Knowledge of Users</h2>
+				<ol>
+					<li>Adaptive website - An adaptive website will remember the buying preferences of the users.</li>
+					<li>Offers based on buying history</li>
+					<li>Availability of utilization statistics</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+
+				<section>
+				<h2>User Satisfaction</h2>
+				<ol>
+					<li>Robustness/reliability of the site i.e. is the site frequently crashing or off-line.</li>
+					<li>Clicks to completion</li>
+					<li>Acknowledge order/request</li>
+					<li>Order/request tracking online</li>
+					<li>Does the cookie fill the form?</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+
+
+
+				<section>
+				<h2>Other Useful Information</h2>
+				<ol>
+					<li>Supplier terms and conditions</li>
+					<li>List of products previously bought by your company</li>
+					<li>Contact details for person in charge of suppliers</li>
+					<li>List of current career opportunities with the company</li>
+					<li>Contact details for HR department</li>
+					<li>Financial results</li>
+					<li>Up-to-date financial news</li>
+					<li>The Company stock price performance</li>
+					<li>History of the company</li>
+					<li>Management and geographical structure of company</li>
+					<li>Mission statement</li>
+					<li>Up-to-date press coverage.</li>
+				</ol>
+				<p>Adapted from: <a href="http://www.mcil.co.uk/review/7-10-criteria.htm">http://www.mcil.co.uk/review/7-10-criteria.htm</a></p>
+				</section>
+
+
+				<section>
+				<h2>Questions?</h2>
+				</section>
+
+	</section>
+
+
+				<!--
+				% _              _                    ____  
+				%| |    ___  ___| |_ _   _ _ __ ___  |___ \ 
+				%| |   / _ \/ __| __| | | | '__/ _ \   __) |
+				%| |__|  __/ (__| |_| |_| | | |  __/  / __/ 
+				%|_____\___|\___|\__|\__,_|_|  \___| |_____|
+				%                                           
+				-->
+	<section>
+				<section>
+				<h2>Professional Chrome</h2>
+				<p>I use the term `Professional Chrome' to describe aspects of website design and production that make a website look `professional'.  This is not an easy area to pin down as it is as much about fashion and trend as it is about good design.</p>
+				<ol>
+					<li>Footers</li>
+					<li>Social Network Links/Feeds</li>
+					<li>Cookie confirmation</li>
+					<li>Icons</li>
+					<li>URLS</li>
+				</ol>
+				</section>
+
+
+				<section>
+				<h2>Footers - Professional Chrome</h2>
+				<p>Footers have developed into the 'small print' area of websites.  However by being a little creative, they can do a lot more.  Footers typically include:</p>
+				<ol>
+					<li>Privacy Policy, Data Policy, Copyright Policy</li>
+					<li>Terms of Use</li>
+					<li>Latest Updates, Latest News, RSS feeds</li>
+					<li>Simplified Navigation</li>
+					<li>Company Legal Information (SI 49 of 2007)</li>
+					<li>Copyright and Author</li>
+				</ol>
+				</section>
+
+
+				<section>
+				<h2>Footers - Professional Chrome</h2>
+				<img class='h350' src="img/wsj.jpg">
+				<p>Wall Street Journal Online <a href="http://uk.wsj.com/home-page">http://uk.wsj.com/home-page</a></p>
+				</section>
+
+				<section>
+				<h2>Footers - Professional Chrome</h2>
+				<img class='h350' src="img/rte.jpg">
+				<a href="http://www.rte.ie/">http://www.rte.ie/</a>
+				</section>
+
+
+				<section>
+				<h2>Social Networks - Professional Chrome</h2>
+				<p>Links to Social Networks are quite easy to achieve, however more complex functionality typically involves linking to the Social Networks API.</p>
+				<img class='h200' src="img/SocialIcons.jpg">
+				<p><a href="http://www.hongkiat.com/blog/free-social-media-icon-sets-best-of/">http://www.hongkiat.com/blog/free-social-media-icon-sets-best-of/</a></p>
+				</section>
+
+				<section>
+				<h2>Social Networks - Professional Chrome</h2>
+				<p>Facebook Like Box</p>
+				<ul>
+					<li>The Facebook API is a fairly easy one to implement.  Register in the Facebook Developers Network to get started.</li>
+					<li>Once setup on the FB side, the implementation typically involves linking to the FB API with your unique code.</li>
+					<li>See <a href="https://developers.facebook.com/docs/reference/plugins/like-box/">https://developers.facebook.com/docs/reference/plugins/like-box/</a></li>
+				</ul>
+				</section>
+
+
+
+				<section>
+				<h2>Cookie Confirmation - Professional Chrome</h2>
+				<p>EU Directive 2009/136/EC amended a previous directive concerned with the protection of privacy in electronic communications.  This had the effect of creating a need to introduce user authorization to store cookies on the users machine. </p>
+				<img src="img/eircomCookie.jpg">
+				<p>Eircom Cookie Confirmation</p>
+				<p>A useful resource are: </p>
+				<ul>
+					<li><a href="http://www.dataprotection.ie/">http://www.dataprotection.ie/</a></li>
+					<li><a href="http://www.ico.org.uk/">http://www.ico.org.uk/</a></li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Icons - Professional Chrome</h2>
+				<p>Icons can aid internationalization and improve the design of a site.  The example below can be modified to suit your site color scheme.</p>
+				<img src="img/dryicons.jpg">
+				<p><a href="http://dryicons.com/free-icons/">http://dryicons.com/free-icons/</a></p>
+				<p>Another useful resource is <a href="http://openiconlibrary.sourceforge.net/">openiconlibrary.sourceforge.net</a>
+				</p></section>
+
+
+				<section>
+				<h2>URL - Professional Chrome</h2>
+				<p>The URL used gives a very strong sense of competence, if you know what to look for.</p>
+				<h3>Good</h3>
+				<ul>
+					<li><a href="http://www.rte.ie/lifestyle/travel/">http://www.rte.ie/lifestyle/travel/</a></li>
+				</ul>
+				<h3>Bad</h3>
+				<ul>
+					<li><a href="http://www.onlinedvdrentals.ie/browse/search/war?x=-1216\&y=-153">http://www.onlinedvdrentals.ie/browse/search/war?x=-1216\&y=-153</a></li>
+					<li><a href="http://moodle.lit.ie/course/view.php?id=1665\#section-1">http://moodle.lit.ie/course/view.php?id=1665\#section-1</a></li>
+					<li><a href="http://www.powercity.ie/index.php?par=40-25&cat=FreeStanding\%20Laundry\%20,\%20Cooking,\%20Cooling\%20,\%20Cleaning\&action=brandstory">http://www.powercity.ie/index.php?par=40-25&cat=FreeStanding\%20Laundry\%20,\%20Cooking,\%20Cooling\%20,\%20Cleaning\&action=brandstory</a></li>
+				</ul>
+				</section>
+
+
+
+				<section>
+				<h2>URL - Professional Chrome</h2>
+				<ul>
+					<li>The issue of URL is more than just aesthetic. It speaks to the structure of the website</li>
+					<li>The RTE example indicates the use of an MVC pattern implementation</li>
+					<li>The ability to see `?',`\%20' and other codes indicates a database driven website.  However leaving this information on the URL exposes the database, and would be one of the first points of attack by a hacker.</li>
+				</ul>
+				<h4>Security and Patterns are beyond the scope of this module.</h4>
+				</section>
+
+				<section>
+				<h2>Questions?</h2>
+				</section>
+	</section>			
+	<section>
+
+				<section>
+				<h2>Composition</h2>
+				<p>Whilst there are no hard and fast rules in relation to composition, research has shown that using some of that certain ways of doing things work better than others.</p>  
+				<h4>What follows is a very short introduction into a very large and interesting field.</h4>
+				</section>
+
+
+
+				<section>
+				<h2>Line - Composition</h2>
+				<ul>
+					<li>Lines can be real or implied. </li>
+					<li>They are typically used to divide space</li>
+					<li>They can also be used to draw the eye to a point of interest</li>
+				</ul>
+				</section>
+
+
+
+				<section>
+				<h2>Form (shape) - Composition</h2>
+				<ul>
+					<li>For much of our work we use rectangles. </li>
+					<li>Proportion is important: golden ratio $\varphi = 1.618$</li>
+					<li>Try not to have forms clashing.</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Texture - Composition</h2>
+				<ul>
+					<li>Type of visual background, typically a repeating detail, but may be a large image. </li>
+					<li>Typically paper, stone, etc.</li>
+					<li>Use with caution; can send a very strong message.</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Texture - Composition</h2>
+				<img class='h350' src="img/cricket.jpg">
+				<p>Image Background <a href="http://www.cricketireland.ie/">http://www.cricketireland.ie/</a></p>
+				</section>
+
+
+				<section>
+				<h2>Color - Composition</h2>
+				<ul>
+					<li>Extremely powerful, very easy to get wrong. </li>
+					<li>Lots of theory on color and mood.</li>
+					<li>Will be the subject of a separate lecture.</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Color - Composition</h2>
+				<img class='h350' src="img/backtrack.jpg">
+				<p>Note Color and Contrast <a href="http://www.backtrack-linux.org/">http://www.backtrack-linux.org/</a></p>
+				</section>
+
+
+
+				<section>
+				<h2>Space (Positive & Negative) - Composition</h2>
+				<ul>
+					<li>Balance areas of information with areas of nothing</li>
+					<li>Too much negative space may look stark</li>
+					<li>Too much positive space may look cluttered </li>
+					<li>Negative space can be used to great effect as can be seen with Google.</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Positive Space - Composition</h2>
+				<img class='h350' src="img/gramophone.jpg">
+				<p>Too much positive space <a href="http://www.gramophone.co.uk/">http://www.gramophone.co.uk/</a></p>
+				</section>
+
+
+				<section>
+				<h2>Negative Space - Composition</h2>
+				<img class='h350' src="img/RiotDesign2.jpg">
+				<p>Use of negative space, stark? <a href="http://riotdesign.eu/">http://riotdesign.eu/</a></p>
+				</section>
+
+
+
+				<section>
+				<h2>Balance - Composition</h2>
+				<ul>
+					<li>Describes how elements are organized over the page. </li>
+					<li>Three (3) types of balance: symmetrical, asymmetrical, radial</li>
+					<li>Symmetrical - Same shapes, axis identifiable</li>
+					<li>Asymmetrical - May contain symmetry, but asymmetrical elements add visual interest</li>
+					<li>Radial - Central point with sections radiating from it.  Difficult to code.</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Balance - Composition</h2>
+				<img class='h350' src="img/myspace.jpg">
+				<p>Asymmetrical, Strong left bias <a href="http://https://myspace.com/">http://https://myspace.com/</a></p>
+				</section>
+
+				<section>
+				<h2>Dominance & Priority - Composition</h2>
+				<ul>
+					<li>We have three main levels, Primary, Secondary and Tertiary elements</li>
+					<li>Primary is reserved for headings</li>
+					<li>Secondary is images, video, used to reinforce the main content and Primary elements</li>
+					<li>Navigation may also be a secondary element</li>
+					<li>Tertiary elements may be footers, blog entries etc.</li>
+					<li>Use to create a Focal Point</li>
+					<li>Use a single image to create visual impact (typically on landing page)</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Dominance & Priority - Composition</h2>
+				<img class='h350' src="img/bigtest.jpg">
+				<p>Color is dominant here! <a href="http://www.thebigtest.org/">http://www.thebigtest.org/</a></p>
+				</section>
+
+
+				<section>
+				<h2>Proportion - Composition</h2>
+				<ul>
+					<li>Deals with the size of elements</li>
+					<li>Implies a sense of importance</li>
+					<li>May unbalance the site</li>
+					<li>Works in conjunction with Dominance and Priority</li>
+					<li>Tertiary elements may be footers, blog entries etc.</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Proportion - Composition</h2>
+				<img class='h350' src="img/irishSun.jpg">
+				<p>What is important here? <a href="http://www.thesun.ie/irishsol/homepage/">http://www.thesun.ie/irishsol/homepage/</a></p>
+				</section>
+
+
+				<section>
+				<h2>Contrast - Composition</h2>
+				<ul>
+					<li>Helps elements stand out from one another</li>
+					<li>Contrast is set through color</li>
+				</ul>
+				<img class='h350' src="img/usGov.jpg">
+				<p>Note the red buttons <a href="http://www.usa.gov/">http://www.usa.gov/</a></p>
+				</section>
+
+
+				<section>
+				<h2>Rhythm & Flow - Composition</h2>
+				<ul>
+					<li>The way the eye moves through the elements.</li>
+					<li>Logical pattern, left-right or top-bottom</li>
+					<li>Z-layout</li>
+					<li>F-layout</li>
+				</ul>
+				</section>
+
+
+
+				<section>
+				<h2>Z-Layout - Composition</h2>
+				<img class='h350' src="img/surveymonkey.jpg">
+				<p>Z-Layout <a href="https://www.surveymonkey.com/">https://www.surveymonkey.com/</a></p>
+				</section>
+
+
+
+				<section>
+				<h2>F-Layout - Composition</h2>
+				<img class='h350' src="img/rteF.jpg">
+				<p><a href="http://www.rte.ie/news/">http://www.rte.ie/news/</a></p>
+				</section>
+
+				<section>
+				<h2>Harmony & Unity - Composition</h2>
+				<ul>
+					<li>Everything should work together.
+				</ul>
+				<img class='h350' src="img/bootstrap.jpg">
+				<p><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></p>
+				</section>
+
+
+				<section>
+				<h2>Gestalt Laws - Composition</h2>
+				<ul>
+					<li>Closure - we close open shapes</li>
+					<li>Similarity - we group objects that have similar shapes, colors or texture</li>
+					<li>Continuation - we group objects that are collinear or follow a  particular direction</li>
+					<li>Alignment - we group objects based on the location of their edges, or centerlines </li>
+					<li>Proximity - we group objects that are close together</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Questions?</h2>
+				</section>
+	</section>
+<!--
+% _              _                    _____ 
+%| |    ___  ___| |_ _   _ _ __ ___  |___ / 
+%| |   / _ \/ __| __| | | | '__/ _ \   |_ \ 
+%| |__|  __/ (__| |_| |_| | | |  __/  ___) |
+%|_____\___|\___|\__|\__,_|_|  \___| |____/ 
+%                                           
+-->
+
+
+	<section>
+				<section>
+				<h2>Color Theory</h2>
+				<p>Color Theory is a broad topic, into which we will not delve too deep.  The main areas we will cover are:</p>
+				<ol>
+					<li>Colors and their meaning</li>
+					<li>Terminology</li>
+					<li>Developing Schemes</li>
+				</ol>
+				<p>Take this lecture with a pinch of salt; Color theory is a very broad area, and quite subjective.  An individuals response to color will be dependent upon many factors including cultural background and personal experiences.</p> 
+				</section>
+
+
+				<section>
+				<h2>RYB Color Star - Color Theory</h2>
+				<object type="image/svg+xml" data="img/ColorStar2.svg">Your browser does not support SVG</object>
+				</section>
+
+
+				<section>
+				<h2>Warm Colors</h2>
+				<img src="img/warm.png">
+				<p>Warm Colors - Reg, Orange, Yellow</p>
+				<ul>
+					<li>Warm colors are a blend of two primary colors, Red and Yellow.</li>
+					<li>Evokes Energy, Enthusiasm and Passion, Comfort</li>
+					<li>Evokes sunrise, sunset, autumn, </li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Red (Primary) - Color Theory</h2>
+				<svg width="900" height="210">
+				  <rect width="900" height="200" style="fill:rgb(255,0,0)" />
+				</svg>
+				<ul>
+					<li>Fire, Danger, Anger</li>
+					<li>Also, prestige such as Red Carpet, or Help such as Red Cross or Red Crescent</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Orange (Secondary) - Color Theory</h2>
+				<svg width="900" height="210">
+				  <rect width="900" height="200" style="fill:rgb(255,127,0)" />
+				</svg>
+				<ul>
+					<li>Vibrant and Energetic</li>
+					<li>Autumn, Sunset, Sunrise, Health (fruit), Wood, Earth</li>
+					<li>More subtle than Red or Yellow</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Yellow (Secondary) - Color Theory</h2>
+				<svg width="900" height="210">
+				  <rect width="900" height="200" style="fill:rgb(255,255,0)" />
+				</svg>
+				<ul>
+					<li>Bright, Lively, Clean, Fresh</li>
+					<li>Most Energetic; Happiness, Crazy? Van Gogh</li>
+					<li>Cowardly, or Loss (yellow ribbon)</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Cool Colors</h2>
+				<img src="img/cool.png">
+				<p>Cool Colors, Blue, Green, Violet</p>
+				<ul>
+					<li>More subdued than warm colors</li>
+					<li>Water, Nature, Calming and Relaxing</li>
+					<li>Use for a sense of professionalism, control, ease</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Blue (Primary) - Color Theory</h2>
+				<svg width="900" height="210">
+				  <rect width="900" height="200" style="fill:rgb(0,0,255)" />
+				</svg>
+				<ul>
+					<li>Considered the least offensive web color</li>
+					<li>Facebook, Twitter, GE, SAP, Samsung, BOI</li>
+					<li>Dark Blue, strong reliable; Bright Blue, fresh clean;</li>
+					<li>Cold?</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Green (Secondary) - Color Theory</h2>
+				<svg width="900" height="210">
+				  <rect width="900" height="200" style="fill:rgb(0,255,0)" />
+				</svg>
+				<ul>
+					<li>Fresh, Nature, Life, Renewal</li>
+					<li>Green with envy? feeling a bit Green?</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Violet (Secondary) - Color Theory</h2>
+				<svg width="900" height="210">
+				  <rect width="900" height="200" style="fill:rgb(127,0,255)" />
+				</svg>
+				<ul>
+					<li>Royalty, Prestige, Strength, Honor</li>
+					<li>Creativity, Imagination</li>
+				</ul>
+				</section>
+
+
+
+				<section>
+				<h2>Neutral Colors - Color Theory</h2>
+				<svg width="900" height="210">
+					<rect width="300" height="100" x='0' y='0' style="fill:rgb(92,92,92)" />
+					<rect width="300" height="100" x='0' y='100' style="fill:rgb(186,186,186)" />
+					<rect width="300" height="100" x='300' y='0' style="fill:rgb(0,0,0)" />
+					<rect width="300" height="100" x='300' y='100' style="fill:rgb(255,255,255)" />
+					<rect width="300" height="100" x='600' y='0' style="fill:rgb(139,69,19)" />	
+					<rect width="300" height="100" x='600' y='100' style="fill:rgb(252,230,201)" />
+				</svg>
+				<ul>
+					<li>Grays, Beiges, Black, White</li>
+					<li>Often used to create unobtrusive backgrounds</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Neutral Colors - Color Theory</h2>
+				<svg width="900" height="210">
+					<rect width="900" height="100" x='0' y='0' style="fill:rgb(0,0,0)" />
+					<rect width="900" height="100" x='0' y='100' style="fill:rgb(255,255,255)" />
+				</svg>
+				<ul>
+					<li>Black is the strongest of the neutrals</li>
+					<li>Very versatile, can be elegant or loud</li>
+					<li>Sophistication (Black Tie)</li>
+					<li>White, clean pure, minimalist, goes with everything </li>
+				</ul>
+				</section>
+
+
+
+				<section>
+				<h2>Neutral Colors - Color Theory</h2>
+				<svg width="900" height="210">
+					<rect width="900" height="100" x='0' y='0' style="fill:rgb(92,92,92)" />
+					<rect width="900" height="100" x='0' y='100' style="fill:rgb(186,186,186)" />
+				</svg>
+				<ul>
+					<li>Conservative, Formal, Unimaginative</li>
+					<li>Very useful for muting text</li>
+					<li>Dark grays can be quite elegant</li>
+					<li>Light grays can replace white backgrounds and add more solidity to a design</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Neutral Colors - Color Theory</h2>
+				<svg width="900" height="210">
+					<rect width="900" height="100" x='0' y='0' style="fill:rgb(139,69,19)" />	
+					<rect width="900" height="100" x='0' y='100' style="fill:rgb(252,230,201)" />
+				</svg>
+				<ul>
+					<li>Hints of nature and warmth without over commitment (boring?)</li>
+					<li>Brown can be warm and inviting</li>
+					<li>Beige can take on the warmth or coldness of the surrounding colors</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Beige Example - Color Theory</h2>
+				<svg width="900" height="210">
+					<rect width="300" height="100" x='100' y='0' style="fill:rgb(255,48,48)" />
+					<rect width="300" height="100" x='100' y='100' style="fill:rgb(252,230,201)" />
+
+					<rect width="300" height="100" x='500' y='0' style="fill:rgb(0,191,255)" />	
+					<rect width="300" height="100" x='500' y='100' style="fill:rgb(252,230,201)" />
+				</svg>
+				<ul>
+					<li>Color Temperature of Beige</li>
+					<li>Tends to take on warmth or coolness of adjacent colors</li>
+				</ul>
+				</section>
+
+
+
+				<section>
+				<h2>Hue - Color Theory</h2>
+				<img src="img/hue.jpg">
+				<p>Hue from Red to Violet as used on Inkscape controls</p>
+				<p>The color such as Red, Green, Blue, Orange etc.</p>
+				</section>
+
+				<section>
+				<h2>Saturation - Color Theory</h2>
+				<ul>
+					<li>It is a measure of how pure a color is.</li>  
+					<li>What we call 'Red' exists between wavelengths of 620 and 750 nm. So, red colored objects typically reflect a variety of wavelengths within this range.  If we have a particular red that is reflecting, say, 80\%\footnote{this is a simplification} of the total refleced light at a wavelength of 680nm, then we say that the color is hightly saturated; the most prominant color is the 680nm red.</li>
+					<li>The problem is that graphics software have implemented something else.  For many color model systems, such as HSL, it is closer to chroma.</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Value - Color Theory</h2>
+				<img src="img/similarvalue.png">
+				<table>
+					<tr>
+						<td>Background</td> 
+						<td>90,150,100 HSL</td>
+					</tr>
+					<tr>
+						<td>Upper Text</td> 
+						<td>60,150,100 HSL</td>
+					</tr>
+					<tr>
+						<td>Middle Text</td>
+						<td>0,150,100 HSL</td>
+					</tr>
+					<tr>
+						<td>Lower Text</td> 
+						<td>130,150,100 HSL</td>
+					</tr>
+				</table>
+				<p>The objects in the image above all have the same saturation and lightness.  Only the hue has changed.  Objects of similar value (lightness) do not contrast well.</p>
+				</section>
+
+
+				<section>
+				<h2>Tone - Color Theory</h2>
+				<img src="img/tones.png">
+				<p>Tones created by adding gray to a base hue</p>
+				<p>Tone is how much grey has been added to a hue</p>
+				</section>
+
+
+				<section>
+				<h2>Shade - Color Theory</h2>
+				<img src="img/shade.png">
+				<p>Shades created by adding black to a base hue</p>
+				<p>Shade is how much black has been added to a hue</p>
+				</section>
+
+
+				<section>
+				<h2>Tint - Color Theory</h2>
+				<img src="img/tint.png">
+				<p>Tint created by adding white to a base hue</p>
+				<p>Tint is how much white has been added to a hue</p>
+				</section>
+
+
+				<section>
+				<h2>Chroma - Color Theory</h2>
+				<img src="img/chroma.png">
+				<p>Chroma - combines a number of other measures</p>
+				<p>A measure of how much black, white or gray is in a color. A high chroma color contains little black, white or gray, whereas a low chroma color contains higher levels of black and white and may look closer to gray than any given hue.</p>
+				</section>
+
+
+				<section>
+				<h2>Defining Color</h2>
+				<p>Numerous color schema exist.  The most common are:</p>
+				<table>
+					<tr>		
+						<td>RGB(a)</td> 
+						<td>Red, Green, Blue, Alpha</td>
+					</tr>
+					<tr>			
+						<td>HSL</td> 
+						<td>Hue, Saturation, Lightness</td>
+					</tr>
+					<tr>			
+						<td>HSV</td> 
+						<td>Hue, Saturation, Value</td>
+					</tr>
+					<tr>			
+						<td>CMYK</td> 
+						<td>Cyan, Magenta, Yellow, Black (Key)</td>
+					</tr>
+				</table>
+				<p>These systems are usually interchangeable.  The most common format for Web design is RGB in Hex values</p>
+				</section>
+
+
+
+				<section>
+				<h2>Defining Color - CSS Good Practice</h2>
+				<p>It is a good idea to place your color scheme in comments at the start of your CSS.</p> 
+				<pre><code class="css">
+/*
+Main Headings: 
+   HSL(143,82%,17%)
+   RGB(8,79,35)
+   Hex #084F23
+Subheadings:  
+   HSL(72,54%,30%)
+   RGB(101,117,35):  
+   Hex #657523
+*/
+				</code></pre>
+				</section>
+
+
+				<section>
+				<h2>Color Schemes</h2>
+				<p>The most common color schemes are:</p> 
+				<ul>
+					<li>Monochromatic</li>
+					<li>Complement</li>
+					<li>Triad</li>
+					<li>Analogic</li>
+					<li>Accented Analogic</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Monochromatic</h2>
+				<img class="h350" src="img/mono.jpg">
+				<p>Different tones, shades and tints of a single hue.  Usually the easiest to develop for beginners.</p>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>Complement</h2>
+				<img class="h350" src="img/comp.jpg">
+				<p>Addition of an additional hue from the opposite side of the color wheel.</p>
+				</section>
+
+
+
+
+
+
+				<section>
+				<h2>Triad</h2>
+				<img class="h350" src="img/triad.jpg">
+				<p>Three hues are selected at 120$\deg$ intervals on the color wheel.</p>
+				</section>
+
+
+
+
+
+
+				<section>
+				<h2>Analogic</h2>
+				<img class="h350" src="img/analogous.jpg">
+				<p>Three hues are selected at regular intervals on the color wheel, not necessarily 120$deg$.  Usually much closer</p>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>Analogic Low Saturation</h2>
+				<img class="h350" src="img/analogous2.jpg">
+				</section>
+
+
+
+
+
+				<section>
+				<h2>Accented Analogic</h2>
+				<img class="h350" src="img/accana.jpg">
+				</section>
+
+
+
+				<section>
+				<h2>Simple Palets</h2>
+				<img src="img/greenpalet.png">
+				</section>
+
+
+
+
+
+				<section>
+				<h2>Simple Palets</h2>
+				<img src="img/redpalet.png">
+				<p>Very simple and effective.  Based on 20\% intervals on the alpha channel, and a hue of choice.</p>
+				</section>
+
+
+
+
+
+
+				<section>
+				<h2>Simple Palets</h2>
+				<img src="img/redpaletcombo.png">
+				<p>Very simple and effective.  Based on 20\% intervals on the alpha channel, and a hue of choice.</p>
+				</section>
+
+				<section>
+					<section>					
+						<h2>Color Blindness</h2>
+						<p>There are three main types of color blindness</p>
+						<ul>
+							<li>T1 Protanopia</li>
+							<li>T2 Deuteranopia</li>
+							<li>T3 Tritanopia</li>
+						</ul>
+						<p>The following simulations are driven by <a href="http://www.daltonize.org">daltonize.org</a></p>
+					</section>
+					<section>
+						<h2>Type 1</h2>
+
+							<script type="text/javascript">
+								$(document).ready(function() {
+									var cbimage = new Image();
+									cbimage.src = "img/cblindImage.jpg";
+									Color.Vision.Simulate(cbimage, { 
+	        							type: "Protanope",
+	        							callback: function(canvas) { 
+	            							document.body.appendChild(canvas);
+	        							}})
+								});
+
+							</script>
+						<p>Image Source <a href="https://pixabay.com/en/modern-art-fractal-background-971594/">https://pixabay.com/en/modern-art-fractal-background-971594/</a></p>
+					</section>
+					<section>
+						<h2>Type 2</h2>
+						
+						<p>Image Source <a href="https://pixabay.com/en/modern-art-fractal-background-971594/">https://pixabay.com/en/modern-art-fractal-background-971594/</a></p>
+					</section>
+					<section>
+						<h2>Type 3</h2>
+
+						<img src="img/cblindImage.jpg">
+						<p>Image Source <a href="https://pixabay.com/en/modern-art-fractal-background-971594/">https://pixabay.com/en/modern-t-fractal-background-971594/</a></p>				
+					</section>
+
+				</section>
+
+
+
+				<section>
+				<h2>Tips and Tricks</h2>
+				<ul>
+					<li>Don't overuse color.  Simple is often more effective</li>
+					<li>Use Web-Safe Colors</li>
+					<li>Test for Color Blindness</li>
+					<li>Provide good contrast for text</li>
+					<li>Spend time on it!</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Questions?</h2>
+				</section>
+	</section>
+
+<!--
+% _              _                    _  _   
+%| |    ___  ___| |_ _   _ _ __ ___  | || |  
+%| |   / _ \/ __| __| | | | '__/ _ \ | || |_ 
+%| |__|  __/ (__| |_| |_| | | |  __/ |__   _|
+%|_____\___|\___|\__|\__,_|_|  \___|    |_|  
+%                                            
+-->
+
+
+	<section>
+
+				<section>
+				<h2>Navigation</h2>
+				<ul>
+					<li>Hierarchical </li>
+					<li>Linear</li>
+					<li>Random</li>
+				</ul>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>Hierarchical Navigation</h2>
+				<img src="img/heir.png">
+						<ul>
+							<li>Clearly defined Home page</li>
+							<li>Nav links to major sections, sections have sub-menus</li>
+							<li>Most common approach</li>
+						</ul>
+				</section>
+
+
+
+
+
+
+				<section>
+				<h2>Hierarchical Navigation</h2>
+				<img src="img/deep.png">
+						<ul>
+							<li>Be careful not to go too deep</li>
+							<li>3-click rule: Users should be able to get to get from any point on your site to another point using a maximum of 3 clicks</li>
+						</ul>
+				</section>
+
+
+				<section>
+				<h2>Hierarchical Navigation</h2>
+				<img src="img/wide.png">
+				<ul>
+					<li>Too Shallow</li>
+					<li>7 $\pm$2 Principle (George Armitage Miller)</li>
+				</ul>
+				</section>
+
+
+				<section>
+				<h2>Linear Navigation</h2>
+				<img src="img/linear.png">
+				<ul>
+					<li>Used for sequential viewing</li>
+					<li>Typical of on-line purchase stages</li>
+				</ul>
+				</section>
+
+
+
+
+
+				<section>
+				<h2>Random Navigation</h2>
+				<img src="img/random.png">
+						<ul>
+							<li>Rarely used on anything other than concept sites</li>
+							<li>Not appropriate in most cases</li>
+							<li>Requires users to explore site; takes time</li>
+							<li>Hard to find examples (\href{http://www.shmarketing.co.uk/}{http://www.shmarketing.co.uk/})</li>
+						</ul>
+				</section>
+
+
+
+				<section>
+				<h2>Content Organization Schemes</h2>
+				<ul>
+					<li>Exact Organization Schemes</li>
+						<ul>
+							<li>Alphabetical schemes</li>
+							<li>Chronological schemes</li>
+							<li>Geographical schemes</li>
+						</ul>
+					<li>Subjective Organization Schemes</li>
+						<ul>
+							<li>Topic schemes (History, Science, etc.)</li>
+							<li>Task schemes (browse, purchase, etc.)</li>
+							<li>Audience schemes (demographics)</li>
+							<li>Metaphor schemes (trash can, folders, etc.)</li>
+						</ul>
+				</ul>
+				<a href="http://www.usability.gov/how-to-and-tools/methods/organization-schemes.html">http://www.usability.gov/how-to-and-tools/methods/organization-schemes.html</a>
+				</section>
+
+
+
+				<section>
+				<h2>Consider</h2>
+				<ul>
+					<li>Navigation Bar: consistent placement</li>
+					<li>Breadcrumbs: Home$>$News$>$Latest News</li>
+					<li>Site Map: Needed for indexing anyway</li>
+					<li>Site Search: Powered by Google?</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Design for Accessibility</h2>
+				<ul>
+					<li>HTML5 nav, article etc.</li>
+					<li>Alternative Text for Images (Visual Impairment)</li>
+					<li>Keyboard Input (Motor Skills)</li>
+					<li>Transcripts of Audio (Hearing Impairment)</li>
+					<li>Closed Captions for Video (Hearing Impairment)</li>
+					<li>Balance Images and Text (ADHD)</li>
+					<li>Multi-Column Text (ADHD)</li>
+					<li>Adjust Text Size (Visual Impairment)</li>
+					<li>Consistent and Predictable Functionality (all)</li>
+				</ul>
+				</section>
+		</section>
+
+			</div>
+
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+
+
+%Corporate Visual Identity Standard
+%MIT \href{http://web.mit.edu/graphicidentity/}{http://web.mit.edu/graphicidentity/}
+
+%\href{http://www.brandebook.com/}{http://www.brandebook.com/}
+
