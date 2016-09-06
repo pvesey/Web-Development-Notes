@@ -1,0 +1,438 @@
+
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Development</title>
+
+		<meta name="description" content="Introduction to Web Development - HTML">
+		<meta name="author" content="Paul Vesey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+
+		<link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+
+		<style type="text/css">
+
+		</style>
+
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Web Development</h1>
+					<h3>Module Introduction</h3>
+					<p>
+						<small>Paul Vesey</small><br>
+						<small><a href="mailto:paul.vesey@lit.ie">paul.vesey@lit.ie</a></small><br>
+						<small>Created using <a href="http://lab.hakim.se/reveal-js/">Reveal.js</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>About me..</h2>
+					<ul>
+						<li>Paul Vesey, BEng (Hons), MIE, HDip</li>
+						<li>13B09</li>
+						<li><a href="mailto:paul.vesey@lit.ie">paul.vesey@lit.ie</a></li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Course in a nutshell</h2>
+					<ul>
+						<li>Web Standards and Evaluation</li>
+						<li>Hypertext Markup Language (HTML)</li>
+						<li>Cascading Style Sheets</li>
+						<li>JavaScript</li>
+					</ul>
+					<p>There will be very few notes in this module.  Assessment will be based on the work you produce</p>
+				</section>
+
+
+				<section>
+					<h2>Note on Notes</h2>
+					<ul>
+						<li>The notes are available in HTML; don't just read the notes, pay attention to how they are constructed</li>
+						<li>Notes will be available in two locations: Moodle and GitHub.  I am currently moving from Moodle to GitHub, so you should take the GitHub as the master.  Updates will be fairly frequent.</li>
+						<li>Use every opportunity you can to learn; view source, self questioning, etc.</li>
+					</ul>
+				</section>
+
+			<section>
+				<section>
+					<h2>Learning Outcomes</h2>
+					<p>On successful completion of this module the learner will/should
+					be able to. . .</p>
+					<ol> 
+						<li>Describe the structure and operation of the World Wide Web.</li>
+						<li>Develop HTML Web Pages.</li>
+						<li>Apply CSS to web pages in order to separate form from content.</li>
+						<li>Use an authoring package to develop web pages that conform to W3C standards and accessibility guidelines.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Learning Outcomes</h2>
+					<p>On successful completion of this module the learner will/should
+					be able to. . .</p>
+					<ol start='5'> 
+						<li>Use JavaScript to add dynamic content to web pages.</li>
+						<li>Publish and maintain a website.</li>
+						<li>Critically assess website design and assessibility</li>
+					</ol>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+				<h2>Indicative Syllabus</h2>
+				<strong>The Web Environment</strong>
+				<ul>
+					<li>The difference between the web and the internet</li>
+					<li>Client/Server architecture</li>
+					<li>Web standards</li>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Indicative Syllabus</h2>
+				<strong>Design Concepts</strong>
+				<ul>
+					<li>Site objectives and target audience, key messages, site structure, design sheets, navigation.</li>
+					<li>Designing for a variety of browsers and displays (including mobile devices)</li>
+					<li>Usability</li>
+					<li>Accessibility</li>
+				</ul>
+				<strong>Authoring Package(s)</strong>
+				</section>
+
+				<section>
+				<h2>Indicative Syllabus</h2>
+				<strong>HTML Markup</strong>
+				<ul>
+					<li>HTML basics - tags, attributes, images, hyperlinks, lists, tables, forms.</li>
+					<li>Document Structure. Document Type Declaration.</li>
+				</ul>
+				<strong>CSS for Presentation</strong>
+				<ul>
+					<li>Advantages of style sheets.</li>
+					<li>Internal and external style sheets.</li>
+					<li>CSS basics - selectors, font and text properties, colour and backgrounds, floating and positioning, classes.</li>
+					<li>CSS techniques - column layouts, rollovers.</li>
+				</ul>
+
+				</section>
+
+				<section>
+				<h2>Indicative Syllabus</h2>
+				<strong>Interactive Web Pages</strong>
+				<ul>
+					<li>DHTML, adding interactivity.</li>
+					<li>Client-side scripting, JavaScript (Control Statements, Object Creation and Modification, Arrays, Functions, Pattern Matching and Validation, Cookies, The document Object, Event Handling)</li>
+				</ul>
+				</section>
+					
+				<section>
+				<h2>Indicative Syllabus</h2>
+				<strong>Publishing and Maintaining a Website</strong>
+				<ul>
+					<li>Posting a site.</li>
+					<li>Choosing a web host.</li>
+					<li>Uploading web pages.</li>
+					<li>Registering a web address.</li>
+				</ul>
+				</section>
+			</section>
+
+
+				<section>
+					<h2>Assessment</h2>
+					<h3>100% Continuous Assessment</h3>
+					<table>
+						<tr>
+							<th>Assessment</th>
+							<th>Proportion</th>
+						</tr>
+						<tr>
+							<td>Practical Evaluation (Lab Work)</td>
+							<td>10%</td>
+						</tr>
+						<tr>
+							<td>Project 1 - Site Evaluations</td>
+							<td>15%</td>
+						</tr>		
+						<tr>
+							<td>Project 2 - HTML, CSS</td>
+							<td>25%</td>
+						</tr>		
+						<tr>
+							<td>Project 3 - Develop &amp; Publish a Website (inc JavaScript)</td>
+							<td>50%</td>
+						</tr>
+					</table>
+				</section>
+
+
+				<section>
+					<h2>Work Plan</h2>
+					<img src="img/schedule1617.jpg" alt="Class Schedule">
+
+				</section>
+
+
+				<section>
+					<h2>Authoring Tools</h2>
+					<ul>
+						<li>Notepad++ / Sublime Text / Atom Editor</li>
+						<li>Browsers (Chrome, Firefox, Opera, IE, Safari)</li>
+						<li>Pencil Project <a href="http://pencil.evolus.vn/">http://pencil.evolus.vn/</a></li>
+						<li>Dreamweaver (LIT Machines)</li>
+						<li>Inkscape</li>
+						<li>GIMP / Paint.net / etc.</li>	
+					</ul>
+				</section>
+
+
+
+				<section>
+					<h2>Browsers</h2>
+					<p>Main Browser Engines aka ‘layout or rendering engine’</p>
+						<ul>
+							<li>WebKit - Safari</li>
+							<li>Blink - Chrome and Opera (fork from WebKit)</li>
+							<li>Geko from Mozilla - Firefox</li>
+							<li>Trident - IE</li>
+							<li>Presto - Opera (Legacy)</li>
+						</ul>
+					<p>It is a good idea to start getting used to these terms now, as they have a considerable impact on CSS and Javascript.</p>
+				</section>
+
+
+				<section>
+					<h2>Browser Usage</h2>
+					<img src="img/browserusage2016.jpg" alt="Browser Usage Image">
+				</section>
+
+				<section>
+					<h2>Browsers - why it matters</h2>
+					<p>Here is why (CSS code)</p>
+					<pre><code class="css">
+.wrapper {
+	-webkit -box -shadow: 0px 0px 8px rgba (0 ,0 ,0 ,0.3);
+	-moz -box -shadow: 0px 0px 8px rgba (0 ,0 ,0 ,0.3);
+	-o-box -shadow: 0px 0px 8px rgba (0 ,0 ,0 ,0.3);
+	box -shadow: 0px 0px 8px rgba (0 ,0 ,0 ,0.3);
+}
+					</code></pre>
+					<p>All of this is required to ensure backwards compatibility. Note
+					that the code for IE is not included because it required a
+					modification to the HTML and some pretty tricky CSS. IE
+					support for box-shadow is reported to be included from V9
+					onwards</p>
+
+				</section>
+
+
+				<section>
+					<h2>The way we will work</h2>
+					<ul>
+						<li>Always use your web server when testing</li>
+						<li>Test; Test; Test. (Learn to automate; batch, Python)</li>
+						<li>Share Information, Help each other, but don’t copy.</li>
+						<li>Usually Start with Lecture, then practical work</li>
+						<li>Practical Work to be submitted</li>
+						<li>We are going to take a strict Document Object Model (DOM) approach</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Developer Tools</h2>
+					<p>Become familiar with the developer tools of your favorite browser</p>
+					<ul>
+						<li>Chrome is good</li>
+						<li>Firefox has Firebug</li>
+						<li>IE is good for XML</li>
+					</ul>
+					<p>Hours can be saved if you take your time and use your tools correctly. Remember if everything worked before you changed something; then what you changed introduced the error.</p>
+				</section>
+
+
+
+				<section>
+					<h2>Setting Up</h2>
+					<p>Some housekeeping tasks that we need to get done</p>
+					<ul>
+						<li>Confirm XAMPP</li>
+						<li>Confirm Notepad++</li>
+						<li>Install Atom and/or Sublime Text</li>
+						<li>Install Pencil Project</li>
+						<li>Install Browsers (big 5)</li>
+						<li>Python 3</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Basic Web Schematic</h2>
+					<img src="img/net1.jpg" alt="Basic Web Diagram">
+				</section>
+
+				<section>
+					<h2>Main Web Protocols</h2>
+					<p>The Internet is built on a number of communications protocols.</p>
+					<p>The main ones are:</p>
+					<ul>
+						<li>Hypertext Transfer Protocol (HTTP)</li>
+						<li>Hypertext Transfer Protocol Secure (HTTPS)</li>
+						<li>File Transfer Protocol (FTP)</li>
+						<li>Multi-Purpose Internet Mail Extension (MIME)</li>
+						<li>Simple Main Tranfer Protocol (SMTP)</li>
+						<li>Post Office Protocol (POP3)</li>
+						<li>Internet Mail Access Protocol (IMAP)</li>
+					</ul>
+				</section>
+
+
+
+
+				<section>
+					<h2>TCP/IP</h2>
+					<ul>
+						<li>Transmission Control Protocol (TCP)</li>
+						<li>Internet Protocol (IP)</li>
+					</ul>
+					<p>TCP and IP serve different purposes. TCP is concerned with making sure data packets are transmitted and received correctly. IP is concerned with the address the packets go to.</p>
+				</section>
+
+
+				<section>
+					<h2>Basic Process</h2>
+					<img src="img/headerschema.jpg" alt="Basic Process Image">
+				</section>
+
+
+				<section>
+					<h2>Request Headers</h2>
+					<img src="img/requestheader.jpg" alt="Request Header Image">
+				</section>
+
+				<section>
+					<h2>Response Headers</h2>
+					<img src="img/responseheader.jpg" alt="Response Header Image">
+				</section>
+
+
+				<section>
+					<h2>HTTP Security</h2>
+					<img src="img/moodlehack.jpg" alt="Security Image">
+				</section>
+
+
+				<section>
+					<h2>Class Exercise</h2>
+					<ul>
+						<li>Moodle Sign-In</li>
+						<li>QR-Attend Sign-In</li>
+						<li>Run-up Chrome Developer Tools</li>
+						<li>Run Login against a site with fake data and find the headers</li>
+					</ul>
+				</section>
+
+
+				<section>
+				<h2>Sublime Text</h2>
+				<ul>
+					<li>Press Mouse Wheel for Vertical Selection</li>
+					<li>Use 'Tab' for autocomplete</li>
+					<li>Hold ctrl key for multi selection</li>
+					<li>Alt-Shift-W to wrap selected text in a tag</li>
+					<li>Use '&ltl' to insert loreum</li>
+				</ul>
+				</section>
+
+
+
+
+				<section>
+				<h2>Credits</h2>
+				<p>Presentation Framework <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a></p>
+				<p>Code Syntax Highlights <a href="https://highlightjs.org/">highlights.js</a></p>
+				</section>
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
