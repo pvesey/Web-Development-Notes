@@ -62,231 +62,231 @@
 				<img height=400px src="img/folderoptions.png">
 				</section>
 
+	<section>
+
+		<section>
+		<h2>CSS</h2>
+		<p>Websites can be broken down into three distinct layers</p>
+		<ol>
+			<li>Content</li>
+			<li>Presentation</li>
+			<li>Interaction / Behaviour</li>
+		</ol>
+		</section>
 
 
-<section>
-<h2>CSS</h2>
-<p>Websites can be broken down into three distinct layers</p>
-<ol>
-	<li>Content</li>
-	<li>Presentation</li>
-	<li>Interaction / Behaviour</li>
-</ol>
-</section>
-
-
-<section>
-<h2>CSS</h2>
-<p>This is  typically achieved by:</p>
-<ol>
-	<li>Content: &#60;html&#62;</li>
-	<li>Presentation: CSS</li>
-	<li>Behavior: JavaScript</li>
-</ol>
-</section>
-
-
-
-
-
-<section>
-<h2>CSS</h2>
-<p>Whilst this model may appear convenient, we find that if falls short of what is actually happening in standards HTML5 and CSS3.</p>  
-<p>In this section we are going to look at CSS</p>
-</section>
-
-
-
-<section>
-<h2>CSS  Cascading Style Sheet</h2>
-<ul>
-	<li>Cascading Style Sheet</li>
-	<li>Set of parameters that tells the browser how to style and layout your site</li>
-	<li>CSS can be placed in-line or you can link to an external file</li>
-	<ul>
-		<li>Better to have an external file, although sometimes it is necessary to use in-line for other reasons</li>
-	</ul>
-</ul>
-</section>
-
-
-
-<section>
-<h2>CSS  Cascading Style Sheet</h2>
-<p>For the moment we are going to consider two aspects of presentation:</p>
-<ol>
-	<li>Structure</li>
-	<li>Style</li>
-</ol>
-<p>Before we begin we need to have a look at how CSS is built.</p>
-</section>
+		<section>
+		<h2>CSS</h2>
+		<p>This is  typically achieved by:</p>
+		<ol>
+			<li>Content: &#60;html&#62;</li>
+			<li>Presentation: CSS</li>
+			<li>Behavior: JavaScript</li>
+		</ol>
+		</section>
 
 
 
 
 
-<section>
-<h2>Anatomy of CSS</h2>
-<p>The main components are the Selector, Attribute and Value</p>
-<ul>
-	<li>Selector (<code>'p'</code>); Attribute (<code>'font-size'</code>) Value (<code>'1em'</code>)</li>
-</ul>
-<pre><code class="css">
-p {
-   font-size: 1em;
-   color: red;
-   line-height: 1.33em;
-   margin: 8px;
-   text-transform: none;
-   alignment: left;
-   }
-</code></pre>
-</section>
+		<section>
+		<h2>CSS</h2>
+		<p>Whilst this model may appear convenient, we find that if falls short of what is actually happening in standards HTML5 and CSS3.</p>  
+		<p>In this section we are going to look at CSS</p>
+		</section>
 
 
 
-<section>
-<h2>CSS Selectors</h2>
-<p>CSS Selectors allow us to 'grab' an element in the DOM structure and do something with it; dependent on the elements attributes.  Selectors are typically:</p>
-<ul>
-	<li>element <code>&#60;h1&#62;</code></li>
-	<li>classes <code>.className</code></li>
-	<li>named <code>#maincontent</code></li>
-</ul>
-</section>
-
-
-<section>
-<h2>CSS Selectors</h2>
-<ul>
-	<li>DOM elements are typically those elements that we define within tags, such as the <code>&#60;h1&#62;</code>, <code>&#60;p&#62;</code>, etc.</li>
-	<li>Classes are an attribute of an element that is defined by the web-author.  Typically multiple elements would be assigned to a single class in order to allow for quick and consistent treatment. <code>&#60;p class='info'&#62;</code></li>
-	<li>Named Elements are similar to class except each element must have a unique identifier.  When called in CSS only one element is effected.  It is generally a bad idea to use named elements for CSS.  It often leads to conflict with JavaScript requirements. <code>&#60;a id='link1' href='\#'&#62;</code></li>
-</ul>
-</section>
-
-
-
-
-
-<section>
-<h2>CSS Attributes and Values</h2>
-<ul>
-	<li>Attributes are characteristics of the HTML element that we can access and modify through CSS</li>
-	<li>Attributes can be categorized into Element, Global and Event Attributes.</li>
-	<li>Values are simply the legal settings for a particular attribute</li>
+		<section>
+		<h2>CSS  Cascading Style Sheet</h2>
 		<ul>
-			<li>For instance color: <code>'color: green;'</code>
+			<li>Cascading Style Sheet</li>
+			<li>Set of parameters that tells the browser how to style and layout your site</li>
+			<li>CSS can be placed in-line or you can link to an external file</li>
+			<ul>
+				<li>Better to have an external file, although sometimes it is necessary to use in-line for other reasons</li>
+			</ul>
 		</ul>
-</ul>
+		</section>
+
+
+
+		<section>
+		<h2>CSS  Cascading Style Sheet</h2>
+		<p>For the moment we are going to consider two aspects of presentation:</p>
+		<ol>
+			<li>Structure</li>
+			<li>Style</li>
+		</ol>
+		<p>Before we begin we need to have a look at how CSS is built.</p>
+		</section>
+
+
+
+
+
+		<section>
+		<h2>Anatomy of CSS</h2>
+		<p>The main components are the Selector, Attribute and Value</p>
+		<ul>
+			<li>Selector (<code>'p'</code>); Attribute (<code>'font-size'</code>) Value (<code>'1em'</code>)</li>
+		</ul>
+		<pre><code class="css">
+		p {
+		   font-size: 1em;
+		   color: red;
+		   line-height: 1.33em;
+		   margin: 8px;
+		   text-transform: none;
+		   alignment: left;
+		   }
+		</code></pre>
+		</section>
+
+
+
+		<section>
+		<h2>CSS Selectors</h2>
+		<p>CSS Selectors allow us to 'grab' an element in the DOM structure and do something with it; dependent on the elements attributes.  Selectors are typically:</p>
+		<ul>
+			<li>element <code>&#60;h1&#62;</code></li>
+			<li>classes <code>.className</code></li>
+			<li>named <code>#maincontent</code></li>
+		</ul>
+		</section>
+
+
+		<section>
+		<h2>CSS Selectors</h2>
+		<ul>
+			<li>DOM elements are typically those elements that we define within tags, such as the <code>&#60;h1&#62;</code>, <code>&#60;p&#62;</code>, etc.</li>
+			<li>Classes are an attribute of an element that is defined by the web-author.  Typically multiple elements would be assigned to a single class in order to allow for quick and consistent treatment. <code>&#60;p class='info'&#62;</code></li>
+			<li>Named Elements are similar to class except each element must have a unique identifier.  When called in CSS only one element is effected.  It is generally a bad idea to use named elements for CSS.  It often leads to conflict with JavaScript requirements. <code>&#60;a id='link1' href='\#'&#62;</code></li>
+		</ul>
+		</section>
+
+
+
+
+
+		<section>
+		<h2>CSS Attributes and Values</h2>
+		<ul>
+			<li>Attributes are characteristics of the HTML element that we can access and modify through CSS</li>
+			<li>Attributes can be categorized into Element, Global and Event Attributes.</li>
+			<li>Values are simply the legal settings for a particular attribute</li>
+				<ul>
+					<li>For instance color: <code>'color: green;'</code>
+				</ul>
+		</ul>
+		</section>
+
+
+
+
+		<section>
+		<h2>Box Model</h2>
+		<p>CSS utilizes what is known as the box model</p>
+		<img src="img/boxdim.jpg">
+		<p>CSS Layout Basics <a href="http://www.w3.org/">http://www.w3.org/</a></p>
+		</section>
+
+
+
+
+
+		<section>
+		<h2>Box Model</h2>
+		<ul>
+			<li>Content</li>
+			<li>Padding (between Content and Boarder) </li>
+			<li>Border (has width) </li>
+			<li>Margin (between box and next box)</li>
+		</ul>
+		<p>Each of these attributes can be assigned (amongst other things) a thickness.</p>
+		</section>
+
+
+
+
+		<section>
+		<h2>Box Model - Positioning</h2>
+		<p>Once we have the box, we can do things with it, such as send it left or right.  This is referred to as floating </p> 
+		<ul>
+			<li><code>float: left;</code></li>
+			<li><code>float: right;</code></li>
+		</ul>
+		<p>Centering Objects is achieved by setting the margins</p>
+		<ul>
+			<li><code>margin-left: auto;</code></li>
+			<li><code>margin-right: auto;</code></li>
+		</ul>
+		</section>
+
+
+
+		<section>
+		<h2>Box Model - Border</h2>
+		<p>We can also set border characteristics. </p> 
+		<ul>
+			<li><code></code><code>border-width: 5px;</code>
+			<li><code></code><code>border-style: solid;</code>
+			<li><code></code><code>border-color: green;</code>
+			<li><code></code><code>border-radius: 10px;</code> 
+		</ul>
+		</section>
+
+
+
+
+		<section>
+		<h2>Box Model - Padding</h2>
+		<p>Padding is the space between the content and the border.  Like many properties, it can be set in shorthand or longhand.</p>   
+		<ul>
+			<li><code>padding: 5px;</code> (All padding 5px)
+			<li><code>padding-top: 5px;</code> 
+			<li><code>padding-right: 10px;</code> 
+			<li><code>padding-bottom: 15px;</code> 
+			<li><code>padding-left: 20px;</code>
+			<li><code>padding: 5px 10px 15px 20px;</code> (shorthand version) 
+		</ul>
+		<p>Shorthand versions follow a clockwise model: 12, 3, 6, 9</p>
+		</section>
+
+
+
+
+
+		<section>
+		<h2>CSS - the Units question</h2>
+		<p>The most commonly used units in CSS are:</p>
+		<ul>
+			<li>\% - percentage
+			<li>em - equal to current font size
+			<li>px - pixel
+			<li>pt - point 1/72 inch
+			<li>cm/mm/in
+		</ul>
+		<p>Your unit choice should be based on what you are trying to do.  For Responsive layouts, normally \% is best, wheras Fonts are better defined in em or pt.</p>
+
+		</section>
+
+
+
+
+
+		<section>
+		<h2>CSS Practical Exercise</h2>
+		<img src="img/CSS1.jpg" height='500px'>
+		</section>
+
+
+
+		<section>
+		<h2>Questions?</h2>
+		</section>
+
 </section>
-
-
-
-
-<section>
-<h2>Box Model</h2>
-<p>CSS utilizes what is known as the box model</p>
-<img src="img/boxdim.jpg">
-<p>CSS Layout Basics <a href="http://www.w3.org/">http://www.w3.org/</a></p>
-</section>
-
-
-
-
-
-<section>
-<h2>Box Model</h2>
-<ul>
-	<li>Content</li>
-	<li>Padding (between Content and Boarder) </li>
-	<li>Border (has width) </li>
-	<li>Margin (between box and next box)</li>
-</ul>
-<p>Each of these attributes can be assigned (amongst other things) a thickness.</p>
-</section>
-
-
-
-
-<section>
-<h2>Box Model - Positioning</h2>
-<p>Once we have the box, we can do things with it, such as send it left or right.  This is referred to as floating </p> 
-<ul>
-	<li><code>float: left;</code></li>
-	<li><code>float: right;</code></li>
-</ul>
-<p>Centering Objects is achieved by setting the margins</p>
-<ul>
-	<li><code>margin-left: auto;</code></li>
-	<li><code>margin-right: auto;</code></li>
-</ul>
-</section>
-
-
-
-<section>
-<h2>Box Model - Border</h2>
-<p>We can also set border characteristics. </p> 
-<ul>
-	<li><code></code><code>border-width: 5px;</code>
-	<li><code></code><code>border-style: solid;</code>
-	<li><code></code><code>border-color: green;</code>
-	<li><code></code><code>border-radius: 10px;</code> 
-</ul>
-</section>
-
-
-
-
-<section>
-<h2>Box Model - Padding</h2>
-<p>Padding is the space between the content and the border.  Like many properties, it can be set in shorthand or longhand.</p>   
-<ul>
-	<li><code>padding: 5px;</code> (All padding 5px)
-	<li><code>padding-top: 5px;</code> 
-	<li><code>padding-right: 10px;</code> 
-	<li><code>padding-bottom: 15px;</code> 
-	<li><code>padding-left: 20px;</code>
-	<li><code>padding: 5px 10px 15px 20px;</code> (shorthand version) 
-</ul>
-<p>Shorthand versions follow a clockwise model: 12, 3, 6, 9</p>
-</section>
-
-
-
-
-
-<section>
-<h2>CSS - the Units question</h2>
-<p>The most commonly used units in CSS are:</p>
-<ul>
-	<li>\% - percentage
-	<li>em - equal to current font size
-	<li>px - pixel
-	<li>pt - point 1/72 inch
-	<li>cm/mm/in
-</ul>
-<p>Your unit choice should be based on what you are trying to do.  For Responsive layouts, normally \% is best, wheras Fonts are better defined in em or pt.</p>
-
-</section>
-
-
-
-
-
-<section>
-<h2>CSS Practical Exercise</h2>
-<img src="img/CSS1.jpg" height='500px'>
-</section>
-
-
-
-<section>
-<h2>Questions?</h2>
-</section>
-
-
 
 <!--
 % _              _                    ____  
@@ -295,284 +295,284 @@ p {
 %| |__|  __/ (__| |_| |_| | | |  __/  / __/ 
 %|_____\___|\___|\__|\__,_|_|  \___| |_____
 -->
+	<section>
 
+		<section>
+		<h2>CSS for Structure  Grids</h2>
+		<ul>
+			<li>When we look at websites and pages for any length of time, we soon realize that the content is normally laid out in a consistent manner.</li>
+			<li>We can normally start to distinguish a pattern of content.  In many cases if we look carefully we can discover a very clear repeating pattern.</li>
+			<li>This pattern is often what is known as a <b>Grid</b>.</li>
+		</ul>
+		</section>
 
-<section>
-<h2>CSS for Structure  Grids</h2>
-<ul>
-	<li>When we look at websites and pages for any length of time, we soon realize that the content is normally laid out in a consistent manner.</li>
-	<li>We can normally start to distinguish a pattern of content.  In many cases if we look carefully we can discover a very clear repeating pattern.</li>
-	<li>This pattern is often what is known as a <b>Grid</b>.</li>
-</ul>
-</section>
 
+		<section>
+		<h2>CSS for Structure  Example</h2>
+		<img src="img/Gridexample.jpg" height='450px'>
+		<p>CSS Grid <a href="http://www.gramophone.co.uk/">gramophone.co.uk</a></p>
+		</section>
 
-<section>
-<h2>CSS for Structure  Example</h2>
-<img src="img/Gridexample.jpg" height='450px'>
-<p>CSS Grid <a href="http://www.gramophone.co.uk/">gramophone.co.uk</a></p>
-</section>
 
 
+		<section>
+		<h2>CSS for Structure  Example</h2>
+		<img src="img/GridexMark.jpg" height='450px'>[h]
+		<p>CSS Grid <a href="http://www.gramophone.co.uk/">gramophone.co.uk</a></p>
+		</section>
 
-<section>
-<h2>CSS for Structure  Example</h2>
-<img src="img/GridexMark.jpg" height='450px'>[h]
-<p>CSS Grid <a href="http://www.gramophone.co.uk/">gramophone.co.uk</a></p>
-</section>
 
 
 
 
+		<section>
+		<h2>CSS for Structure</h2>
+		<p>In the past the 3 column layout was popular.  This was extended to include a header or banner area, and footers also.  Over the years many permutations of the 3 column layout have been developed as can be seen in the following slides.</p>
+		</section>
 
-<section>
-<h2>CSS for Structure</h2>
-<p>In the past the 3 column layout was popular.  This was extended to include a header or banner area, and footers also.  Over the years many permutations of the 3 column layout have been developed as can be seen in the following slides.</p>
-</section>
 
 
 
 
+		<section>
+		<h2>CSS for Structure  3-Column</h2>
+		<img src="img/CSSlayouts.jpg" height='450px'>
+		<p>CSS Layout Basics <a href="http://coding.smashingmagazine.com/2007/01/12/free-css-layouts-and-templates/">smashingmagazine.com</a></p>
+		</section>
 
-<section>
-<h2>CSS for Structure  3-Column</h2>
-<img src="img/CSSlayouts.jpg" height='450px'>
-<p>CSS Layout Basics <a href="http://coding.smashingmagazine.com/2007/01/12/free-css-layouts-and-templates/">smashingmagazine.com</a></p>
-</section>
 
 
 
 
+		<section>
+		<h2>CSS for Structure  3-Column</h2>
+		<img src="img/CSSlayouts2.jpg" height='450px'>
+		<p>CSS Layout Basics - <a href="http://www.tripwiremagazine.com/2011/10/css-layouts.html">tripwiremagazine.com</a></p>
+		</section>
 
-<section>
-<h2>CSS for Structure  3-Column</h2>
-<img src="img/CSSlayouts2.jpg" height='450px'>
-<p>CSS Layout Basics - <a href="http://www.tripwiremagazine.com/2011/10/css-layouts.html">tripwiremagazine.com</a></p>
-</section>
 
 
 
+		<section>
+		<h2>Grid System</h2>
+		<p><a href="http://www.thegridsystem.org/">thegridsystem.org</a> provides some information on Grids.</p>
+		<img src="img/GSOrgOff.jpg" height='450px'>
+		</section>
 
-<section>
-<h2>Grid System</h2>
-<p><a href="http://www.thegridsystem.org/">thegridsystem.org</a> provides some information on Grids.</p>
-<img src="img/GSOrgOff.jpg" height='450px'>
-</section>
 
 
 
+		<section>
+		<h2>Grid System</h2>
+		<p><a href="http://www.thegridsystem.org/">thegridsystem.org</a> provides some information on Grids.</p>
+		<img src="img/GSOrgOn.jpg" height='450px'>
+		</section>
 
-<section>
-<h2>Grid System</h2>
-<p><a href="http://www.thegridsystem.org/">thegridsystem.org</a> provides some information on Grids.</p>
-<img src="img/GSOrgOn.jpg" height='450px'>
-</section>
 
 
+		<section>
+		<h2>3-Column v Grid System</h2>
+		<p>There is nothing wrong with either system.  As usual it is a design choice to use one or the other.  Some of the factors that influence the decision are:</p>
+		<ul>
+			<li>3-column is usually very easy to implement</li>
+			<li>Grid system can be considered complex to learn </li>
+			<li>Consistent placement of media elements can present a problem on 3-col systems.</li>
+			<li>Simple 3-col systems can be very easily made responsive </li>
+		</ul>
+		<p>The reason we are getting into Grids is that they can be set up as a 3-col layout.</p>
+		</section>
 
-<section>
-<h2>3-Column v Grid System</h2>
-<p>There is nothing wrong with either system.  As usual it is a design choice to use one or the other.  Some of the factors that influence the decision are:</p>
-<ul>
-	<li>3-column is usually very easy to implement</li>
-	<li>Grid system can be considered complex to learn </li>
-	<li>Consistent placement of media elements can present a problem on 3-col systems.</li>
-	<li>Simple 3-col systems can be very easily made responsive </li>
-</ul>
-<p>The reason we are getting into Grids is that they can be set up as a 3-col layout.</p>
-</section>
 
 
+		<section>
+		<h2>Anatomy of a Grid System</h2>
+		<p>For the most part a Grid system consists of:</p>
+		<ul>
+			<li>HTML, which establishes the division <code>&#60;div&#62;</code> structure</li>
+			<li>CSS, which controls the placement of the divs when rendered in the browser </li>
+		</ul>
+		</section>
 
-<section>
-<h2>Anatomy of a Grid System</h2>
-<p>For the most part a Grid system consists of:</p>
-<ul>
-	<li>HTML, which establishes the division <code>&#60;div&#62;</code> structure</li>
-	<li>CSS, which controls the placement of the divs when rendered in the browser </li>
-</ul>
-</section>
 
 
+		<section>
+		<h2>Anatomy of a Grid System (HTML)</h2>
+		<p>HTML Extract:</p>
+		<img src="img/GridHTML.jpg" height="450">
+		</section>
 
-<section>
-<h2>Anatomy of a Grid System (HTML)</h2>
-<p>HTML Extract:</p>
-<img src="img/GridHTML.jpg" height="450">
-</section>
 
 
 
+		<section>
+		<h2>Anatomy of a Grid System (CSS)</h2>
+		<p>CSS Extract:</p>
+		<img src="img/GridCSS.jpg" height="450">
+		</section>
 
-<section>
-<h2>Anatomy of a Grid System (CSS)</h2>
-<p>CSS Extract:</p>
-<img src="img/GridCSS.jpg" height="450">
-</section>
 
 
 
+		<section>
+		<h2>Grid System  Things to Note</h2>
+		<ul>
+			<li>Grid Systems make extensive use of CSS classes</li>
+			<li>CSS <code>display</code> attribute is used extensively </li>
+			<li>Grids often make use of a number of style sheets</li>
+			<li>They are very easy to break if you don't know what you are doing</li>
+			<li>The most common width used is 960 pixels</li>
+			<li>Grids can be easily adapted for multiple screen sizes</li>
+		</ul>
+		</section>
 
-<section>
-<h2>Grid System  Things to Note</h2>
-<ul>
-	<li>Grid Systems make extensive use of CSS classes</li>
-	<li>CSS <code>display</code> attribute is used extensively </li>
-	<li>Grids often make use of a number of style sheets</li>
-	<li>They are very easy to break if you don't know what you are doing</li>
-	<li>The most common width used is 960 pixels</li>
-	<li>Grids can be easily adapted for multiple screen sizes</li>
-</ul>
-</section>
 
 
+		<section>
+		<h2>CSS <code>display</code> Attribute</h2>
+		<p>The display attribute tells the rendering engine how to layout your element.  These are the ones used most often.</p>
 
-<section>
-<h2>CSS <code>display</code> Attribute</h2>
-<p>The display attribute tells the rendering engine how to layout your element.  These are the ones used most often.</p>
+		<pre><code class="css">
+		display: none; /* Don't show the element*/
+		display: block; /* Show the element as a block; typically one block above another*/
+		display: inline-block; /* Place elements beside each other*/
+		display: grid; /* Experimental, grid is here to stay!?*/
 
-<pre><code class="css">
-display: none; /* Don't show the element*/
-display: block; /* Show the element as a block; typically one block above another*/
-display: inline-block; /* Place elements beside each other*/
-display: grid; /* Experimental, grid is here to stay!?*/
+		</code></pre>
+		</section>
 
-</code></pre>
-</section>
 
 
 
 
 
+		<section>
+		<h2>Why 960?</h2>
+		<p>960 has been around for a while.  Many designers are saying that 960 is too restrictive and that it is time to change.  It has persisted for a number of reasons</p>
+		<ul>
+			<li>960 is easily divisible by 16 and 12, therefore giving easy 12 column and 16 column layouts</li>
+			<li>Smartphones and Tablets are tracking as the web device of choice</li> 
+			<li>960 is the optimum size for devices with 1024 width once you consider the browser container</li> 
+		</ul>
+		<p>960 will not be around forever.  There are talks of 976 and 972 and larger.  All in all it is a useful size that give us a solid framework.</p>
+		</section>
 
-<section>
-<h2>Why 960?</h2>
-<p>960 has been around for a while.  Many designers are saying that 960 is too restrictive and that it is time to change.  It has persisted for a number of reasons</p>
-<ul>
-	<li>960 is easily divisible by 16 and 12, therefore giving easy 12 column and 16 column layouts</li>
-	<li>Smartphones and Tablets are tracking as the web device of choice</li> 
-	<li>960 is the optimum size for devices with 1024 width once you consider the browser container</li> 
-</ul>
-<p>960 will not be around forever.  There are talks of 976 and 972 and larger.  All in all it is a useful size that give us a solid framework.</p>
-</section>
 
 
+		<section>
+		<h2>CSS Media Sizes</h2>
+		<p>Screen sizes on devices are a movable feast. It is simply not possible to cater for every possible combination of device.  A few simple start points are however:</p>
 
-<section>
-<h2>CSS Media Sizes</h2>
-<p>Screen sizes on devices are a movable feast. It is simply not possible to cater for every possible combination of device.  A few simple start points are however:</p>
+		<ul>
+			<li>960 px, general norm at present</li> 
+			<li>1024px, iPad landscape (covered in 960)</li>
+			<li>768px, iPad portrait</li>
+			<li>480px, Smartphone landscape</li>
+			<li>320px, Smartphone portrait</li>
+		</ul>
+		<p><a href="http://css-tricks.com/snippets/css/media-queries-for-standard-devices/">http://css-tricks.com/snippets/css/media-queries-for-standard-devices/</a></p>
+		<p>It makes sense to break a point or two before this.</p>
+		</section>
 
-<ul>
-	<li>960 px, general norm at present</li> 
-	<li>1024px, iPad landscape (covered in 960)</li>
-	<li>768px, iPad portrait</li>
-	<li>480px, Smartphone landscape</li>
-	<li>320px, Smartphone portrait</li>
-</ul>
-<p><a href="http://css-tricks.com/snippets/css/media-queries-for-standard-devices/">http://css-tricks.com/snippets/css/media-queries-for-standard-devices/</a></p>
-<p>It makes sense to break a point or two before this.</p>
-</section>
 
 
 
+		<section>
+		<h2>Class Exercise  Simple Grid</h2>
+		<p>We are going to create this;</p>
+		<img src="img/vgrid.jpg" height="400">
+		<p>But before we do....</p>
+		</section>
 
-<section>
-<h2>Class Exercise  Simple Grid</h2>
-<p>We are going to create this;</p>
-<img src="img/vgrid.jpg" height="400">
-<p>But before we do....</p>
-</section>
 
 
 
+		<section>
+		<h2>Using an External Stylesheet</h2>
+		<p>In order to make use of your css file you simply include a link to your style sheet in the header section of your HTML</p>
+		<pre><code class="html">
+		...
+		&#60;head&#62;
+		&#60;link rel='stylesheet' type='text/css' 
+		        href='mystyle.css'&#62;
+		&#60;/head&#62;
+		...
+		&#60;p&#62;This is some text that I have styled&#60;/p&#62;
+		...
 
-<section>
-<h2>Using an External Stylesheet</h2>
-<p>In order to make use of your css file you simply include a link to your style sheet in the header section of your HTML</p>
-<pre><code class="html">
-...
-&#60;head&#62;
-&#60;link rel='stylesheet' type='text/css' 
-        href='mystyle.css'&#62;
-&#60;/head&#62;
-...
-&#60;p&#62;This is some text that I have styled&#60;/p&#62;
-...
+		</code></pre>
+		</section>
 
-</code></pre>
-</section>
 
 
 
+		<section>
+		<h2>CSS Good Practice</h2>
+		<p>For maintenance reasons you should include a TOC and organize your CSS file</p>
+		<pre><code class="css">
+		/*-------------------------------------
+		Table of contents
+		1. Reset
+		2. Typography
+		3. Basic layout
+		4. Widgets
+		5. Media items
+		6. Forms
+		7. Media queries
+		8. IE specific styles
+		---------------------------------------*/
 
-<section>
-<h2>CSS Good Practice</h2>
-<p>For maintenance reasons you should include a TOC and organize your CSS file</p>
-<pre><code class="css">
-/*-------------------------------------
-Table of contents
-1. Reset
-2. Typography
-3. Basic layout
-4. Widgets
-5. Media items
-6. Forms
-7. Media queries
-8. IE specific styles
----------------------------------------*/
+		</code></pre>
+		</section>
 
-</code></pre>
-</section>
 
 
+		<section>
+		<h2>CSS Good Practice</h2>
+		<p>It is also a good idea to re-set all of the margins and padding to zero to make sure that your layout is built cleanly.</p>
+		<pre><code class="css">
+		* {
+		  margin: 0;
+		  padding: 0;
+		}
 
-<section>
-<h2>CSS Good Practice</h2>
-<p>It is also a good idea to re-set all of the margins and padding to zero to make sure that your layout is built cleanly.</p>
-<pre><code class="css">
-* {
-  margin: 0;
-  padding: 0;
-}
+		</code></pre>
+		</section>
 
-</code></pre>
-</section>
 
 
 
+		<section>
+		<h2>A Few Tips  Floats</h2>
+		<ul>
+			<li><code>'clear: both;'</code> or <code>'clear: left;'</code> will force your content onto the next line.</li>
+			<li>The height of floated elements is invisible to a containing <code>&#60;div&#62;</code>.  The fix for this is to create an empty div at the end of our content and style it to clear all floats.</li>
+			<li>Adding <code>'overflow: hidden;'</code> to the containing div will have the same effect</li>
+		</ul>
+		</section>
 
-<section>
-<h2>A Few Tips  Floats</h2>
-<ul>
-	<li><code>'clear: both;'</code> or <code>'clear: left;'</code> will force your content onto the next line.</li>
-	<li>The height of floated elements is invisible to a containing <code>&#60;div&#62;</code>.  The fix for this is to create an empty div at the end of our content and style it to clear all floats.</li>
-	<li>Adding <code>'overflow: hidden;'</code> to the containing div will have the same effect</li>
-</ul>
-</section>
 
+		<section>
+		<h2>Calculating 960 elements</h2>
+		<p>Recall the box model: the width of an element is a combination of the <b>margin</b>, <b>border</b> and <b>content</b>}.</p> 
+		<img src="img/boxdim.jpg">
+		<p>Width = margin + border + padding + content + padding + border + margin</p>
+		</section>
 
-<section>
-<h2>Calculating 960 elements</h2>
-<p>Recall the box model: the width of an element is a combination of the <b>margin</b>, <b>border</b> and <b>content</b>}.</p> 
-<img src="img/boxdim.jpg">
-<p>Width = margin + border + padding + content + padding + border + margin</p>
-</section>
 
 
+		<section>
+		<h2>Class Exercise  Simple Grid</h2>
+		<img src="img/vgrid.jpg" height="450">
+		<p>Simple CSS Grid</p>
+		</section>
 
-<section>
-<h2>Class Exercise  Simple Grid</h2>
-<img src="img/vgrid.jpg" height="450">
-<p>Simple CSS Grid</p>
-</section>
 
 
+		<section>
+		<h2>Questions?</h2>
+		</section>
 
-<section>
-<h2>Questions?</h2>
-</section>
-
-
+	</section>
 
 
 <!--
@@ -583,230 +583,233 @@ Table of contents
 %|_____\___|\___|\__|\__,_|_|  \___| |____/ 
  -->                                          
 		
-
 <section>
-<h2>CSS Fonts</h2>
-<ul>
-	<li>CSS3 greatly improved font handling</li>
-	<li>Aspects of the standard are still in progress</li>
-	<li>We still have some problems with OS specific fonts</li>
-</ul>
+	<section>
+	<h2>CSS Fonts</h2>
+	<ul>
+		<li>CSS3 greatly improved font handling</li>
+		<li>Aspects of the standard are still in progress</li>
+		<li>We still have some problems with OS specific fonts</li>
+	</ul>
+	</section>
+
+
+
+	<section>
+	<h2>CSS Fonts Design</h2>
+	<p>There are four main font types used in web.</p>
+	<ul>
+		<li>Serif</li>
+		<li>San-Serif</li>
+		<li>Monospace</li>
+		<li>Cursive</li>
+	</ul>
+	<img src="img/mainfonts.jpg">
+	</section>
+
+	<section>
+		<h2>Terms in Typography</h2>
+		<img src="img/termdiag.gif" alt="Typographic Anatomy">
+	</section>
+
+	<section>
+	<h2>CSS Fonts</h2>
+	<p>There are 3 main ways to access fonts for webpages</p>
+	<ul>
+		<li>Embedded and Operating System (tends to be OS specific)</li>
+		<li>Google Webfonts, similar to site server but, Google does the hosting</li>
+		<li>Site Server based specific, that have to be downloaded when browsing</li>
+	</ul>
+	</section>
+
+
+
+	<section>
+	<h2>Embedded & OS</h2>
+	<ul>
+		<li>Serif, San-Serif, Monospace, and Cursive should be defined for every browser, and are based on operating system fonts.  You do not need to do anything to load them.</li>
+		<li>They are the most reliable</li>
+		<li>They should always be used as a fall-back when defining fonts.</li>
+		<li>Stick to Web Safe fonts. See <a href=""></a><a href="http://www.w3schools.com/cssref/css\_websafe\_fonts.asp">http://www.w3schools.com/cssref/css\_websafe\_fonts.asp</a></li> 
+	</ul>
+	</section>
+
+
+
+	<section>
+	<h2>Embedded & OS Code</h2>
+	<p>CSS is then typically:</p>
+	<pre><code class="css">
+	font-family: Verdana;
+
+	</code></pre>
+	<p>Note: this will work, but is poor practice as no fallback has been provided</p>
+	</section>
+
+
+
+
+
+	<section>
+	<h2>Google Fonts</h2>
+	<p>If you want something more you can look at Google Fonts</p>
+	<ul>
+		<li>Google Fonts provides a mechanism to access fonts, and have them rendered on the user's browser</li>
+		<li>Involves adding a line of HTML for each Google Font</li>
+		<li>Can add a considerable amount of time to page loads.</li>
+		<li>Google is in the driving seat.  If they drop or interrupt the service, your site will be effected.</li>
+	</ul>
+	<img src="img/GoogleFonts.jpg" >
+	</section>
+
+
+	<section>
+	<h2>Google Fonts Code</h2>
+	<p>HTML is typically:</p>
+	<pre><code class="css">
+	<link rel='stylesheet' type='text/css' 
+	  href='http://fonts.googleapis
+	  .com/css?family=Henny+Penny'>
+
+	</code></pre>
+	</section>
+
+
+
+	<section>
+	<h2>Google Fonts Code</h2>
+	<p>CSS is then typically:</p>
+	<pre><code class="css">
+	font-family: 'Henny Penny';
+
+	</code></pre>
+	<p>The HTML will load the font.  Once loaded the CSS can then use it.  For this to work, the HTML must load the Font before the CSS.</p>
+	</section>
+
+
+	<section>
+	<h2>Alternative Google Font Load</h2>
+	<p><code>@import</code> can be used directly in the CSS file to load a Google font.  Code is then typically:</p>
+	<pre><code class="css">
+	@import url(https://fonts.googleapis.com/css?family=Henny+Penny);
+
+	...
+	font-family: 'Henny Penny', cursive;
+	...
+
+	</code></pre>	
+
+	</section>
+
+
+
+	<section>
+	<h2>Server Based Fonts</h2>
+	<p>Another option is to look at having fonts on your server</p>
+	<ul>
+		<li>Slightly clunky implementation due to browser compatibility issues</li>
+		<li>Gives full control to the web author</li>
+		<li>Generally faster than Google Fonts, but slower than embedded or OS.</li>
+	</ul>
+	</section>
+
+
+
+	<section>
+	<h2>Server Based Fonts</h2>
+	<p>There are a number of different font formats.  The most common are:</p>
+	<ul>
+		<li>TrueType <code>(.ttf)</code></li>
+		<li>Open Type Format <code>(.otf)</code></li>
+		<li>Web Open Font Format <code>(.woff)</code></li>
+		<li>Embedded Open Type <code>(.eot)</code></li>
+		<li>SVG <code>(.svg)</code></li>
+	</ul>
+	</section>
+
+
+
+	<section>
+	<h2>Server Based Fonts  @font-face</h2>
+	<p>Fonts are loaded using CSS @font-face.  Simple syntax is:</p>
+	<pre><code class="css">
+	@font-face {
+	 font-family: teleindicator;
+	 src: url(fnt/teleindicadores1.ttf);
+	}
+
+	</code></pre>
+	</section>
+
+
+
+
+	<section>
+	<h2>Server Based Fonts  @font-face</h2>
+	<p>The font can then be called in the normal CSS way using:</p>
+	<pre><code class="css">
+	font-family: teleindicator;	
+
+	</code></pre>
+	</section>
+
+
+
+
+	<section>
+	<h2>Server Based Fonts  @font-face</h2>
+	<p>There is an issue however in relation to browser compatibility. Not all browsers implement all of the various font types.</p>  
+	<p>This means that we have to load a number of different font formats in order for our font to be rendered by all browsers.</p>
+	<pre><code class="css">
+	@font-face {
+	 font-family: ralewaythin;
+	 src: 
+	  url(fnt/raleway_thin-webfont.otf) format('opentype'),
+	  url(fnt/raleway_thin-webfont.woff) format('woff'),
+	  url(fnt/raleway_thin-webfont.ttf) format('truetype'),		
+	  url(fnt/raleway_thin-webfont.svg) format('svg');
+	}
+
+	</code></pre>
+	</section>
+
+
+
+
+
+	<section>
+	<h2>Good Practice CSS Font call</h2>
+	<p>We need to provide support for a variety of operating systems.  To achieve this we normally specify a number of fonts in sequence.  When rendering, the browser will look for the first, then the second and finally the third.</p>  
+	<p>In the example below, Arial will be picked up by Windows, Helvetica by iOS, and failing either of those the embedded sans-serif font will be used.</p>
+	<pre><code class="css">
+	h1, h2, h3{
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+	</code></pre>
+	</section>
+
+
+
+
+	<section>
+	<h2>Note on Design</h2>
+	<ul>
+		<li>Do not mix serif, sans-serif etc unless there is a very good reason to do so.</li>
+		<li>Do not use many fonts; the object of the exercise is to present information in a readable format; not showcase the web developers expertise</li>
+		<li>Make sure your font choices are legible</li>
+		<li>Provide good contrast between the font and the background</li>
+		<li>Pick a font that enhances the message: Comic Sans for a Bank anyone?</li>
+	</ul>
+	</section>
+
+
+
+	<section>
+	<h2>Questions</h2>
+	</section>                                         
+
 </section>
-
-
-
-<section>
-<h2>CSS Fonts  Design</h2>
-<p>There are four main font types used in web.</p>
-<ul>
-	<li>Serif</li>
-	<li>San-Serif</li>
-	<li>Monospace</li>
-	<li>Cursive</li>
-</ul>
-<img src="img/mainfonts.jpg">
-</section>
-
-
-
-<section>
-<h2>CSS Fonts</h2>
-<p>There are 3 main ways to access fonts for webpages</p>
-<ul>
-	<li>Embedded and Operating System (tends to be OS specific)</li>
-	<li>Google Webfonts, similar to site server but, Google does the hosting</li>
-	<li>Site Server based specific, that have to be downloaded when browsing</li>
-</ul>
-</section>
-
-
-
-<section>
-<h2>Embedded & OS</h2>
-<ul>
-	<li>Serif, San-Serif, Monospace, and Cursive should be defined for every browser, and are based on operating system fonts.  You do not need to do anything to load them.</li>
-	<li>They are the most reliable</li>
-	<li>They should always be used as a fall-back when defining fonts.</li>
-	<li>Stick to Web Safe fonts. See <a href=""></a><a href="http://www.w3schools.com/cssref/css\_websafe\_fonts.asp">http://www.w3schools.com/cssref/css\_websafe\_fonts.asp</a></li> 
-</ul>
-</section>
-
-
-
-<section>
-<h2>Embedded & OS Code</h2>
-<p>CSS is then typically:</p>
-<pre><code class="css">
-font-family: Verdana;
-
-</code></pre>
-<p>Note: this will work, but is poor practice as no fallback has been provided</p>
-</section>
-
-
-
-
-
-<section>
-<h2>Google Fonts</h2>
-<p>If you want something more you can look at Google Fonts</p>
-<ul>
-	<li>Google Fonts provides a mechanism to access fonts, and have them rendered on the user's browser</li>
-	<li>Involves adding a line of HTML for each Google Font</li>
-	<li>Can add a considerable amount of time to page loads.</li>
-	<li>Google is in the driving seat.  If they drop or interrupt the service, your site will be effected.</li>
-</ul>
-<img src="img/GoogleFonts.jpg" >
-</section>
-
-
-<section>
-<h2>Google Fonts Code</h2>
-<p>HTML is typically:</p>
-<pre><code class="css">
-<link rel='stylesheet' type='text/css' 
-  href='http://fonts.googleapis
-  .com/css?family=Henny+Penny'>
-
-</code></pre>
-</section>
-
-
-
-<section>
-<h2>Google Fonts Code</h2>
-<p>CSS is then typically:</p>
-<pre><code class="css">
-font-family: 'Henny Penny';
-
-</code></pre>
-<p>The HTML will load the font.  Once loaded the CSS can then use it.  For this to work, the HTML must load the Font before the CSS.</p>
-</section>
-
-
-<section>
-<h2>Alternative Google Font Load</h2>
-<p><code>@import</code> can be used directly in the CSS file to load a Google font.  Code is then typically:</p>
-<pre><code class="css">
-@import url(https://fonts.googleapis.com/css?family=Henny+Penny);
-
-...
-font-family: 'Henny Penny', cursive;
-...
-
-</code></pre>	
-
-</section>
-
-
-
-<section>
-<h2>Server Based Fonts</h2>
-<p>Another option is to look at having fonts on your server</p>
-<ul>
-	<li>Slightly clunky implementation due to browser compatibility issues</li>
-	<li>Gives full control to the web author</li>
-	<li>Generally faster than Google Fonts, but slower than embedded or OS.</li>
-</ul>
-</section>
-
-
-
-<section>
-<h2>Server Based Fonts</h2>
-<p>There are a number of different font formats.  The most common are:</p>
-<ul>
-	<li>TrueType <code>(.ttf)</code></li>
-	<li>Open Type Format <code>(.otf)</code></li>
-	<li>Web Open Font Format <code>(.woff)</code></li>
-	<li>Embedded Open Type <code>(.eot)</code></li>
-	<li>SVG <code>(.svg)</code></li>
-</ul>
-</section>
-
-
-
-<section>
-<h2>Server Based Fonts  @font-face</h2>
-<p>Fonts are loaded using CSS @font-face.  Simple syntax is:</p>
-<pre><code class="css">
-@font-face {
- font-family: teleindicator;
- src: url(fnt/teleindicadores1.ttf);
-}
-
-</code></pre>
-</section>
-
-
-
-
-<section>
-<h2>Server Based Fonts  @font-face</h2>
-<p>The font can then be called in the normal CSS way using:</p>
-<pre><code class="css">
-font-family: teleindicator;	
-
-</code></pre>
-</section>
-
-
-
-
-<section>
-<h2>Server Based Fonts  @font-face</h2>
-<p>There is an issue however in relation to browser compatibility. Not all browsers implement all of the various font types.</p>  
-<p>This means that we have to load a number of different font formats in order for our font to be rendered by all browsers.</p>
-<pre><code class="css">
-@font-face {
- font-family: ralewaythin;
- src: 
-  url(fnt/raleway_thin-webfont.otf) format('opentype'),
-  url(fnt/raleway_thin-webfont.woff) format('woff'),
-  url(fnt/raleway_thin-webfont.ttf) format('truetype'),		
-  url(fnt/raleway_thin-webfont.svg) format('svg');
-}
-
-</code></pre>
-</section>
-
-
-
-
-
-<section>
-<h2>Good Practice CSS Font call</h2>
-<p>We need to provide support for a variety of operating systems.  To achieve this we normally specify a number of fonts in sequence.  When rendering, the browser will look for the first, then the second and finally the third.</p>  
-<p>In the example below, Arial will be picked up by Windows, Helvetica by iOS, and failing either of those the embedded sans-serif font will be used.</p>
-<pre><code class="css">
-h1, h2, h3{
-font-family: Arial, Helvetica, sans-serif;
-}
-
-</code></pre>
-</section>
-
-
-
-
-<section>
-<h2>Note on Design</h2>
-<ul>
-	<li>Do not mix serif, sans-serif etc unless there is a very good reason to do so.</li>
-	<li>Do not use many fonts; the object of the exercise is to present information in a readable format; not showcase the web developers expertise</li>
-	<li>Make sure your font choices are legible</li>
-	<li>Provide good contrast between the font and the background</li>
-	<li>Pick a font that enhances the message: Comic Sans for a Bank anyone?</li>
-</ul>
-</section>
-
-
-
-<section>
-<h2>Questions</h2>
-</section>                                         
-
-
 
 
 
