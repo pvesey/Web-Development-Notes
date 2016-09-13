@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302" height="225">
+<g stroke-width="3" id="lns">
+<polyline stroke="#000" points="10,10 70,110"/>
+<polyline stroke="#900" points="70,110 130,210"/>
+<polyline stroke="#009" points="70,90 142,210"/>
+</g>
+<rect fill="#aaa" width="42" height="200" y="10" x="49"/>
+<use xlink:href="#lns" transform="translate(150)"/>
+<rect fill="#aaa" width="42" height="200" y="10" x="199" opacity=".5"/>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="480" height="340" version="1.1">
+<defs>
+<g stroke="#000" stroke-width="9" fill="#f00" id="ln0">
+<polyline points="0,0 0,144" stroke-width="12"/>
+<polyline points="-23,0 23,0"/>
+<polyline points="-23,24 23,24"/>
+<polyline points="-23,48 23,48"/>
+<polyline points="-23,72 23,72"/>
+<polyline points="-23,96 23,96"/>
+<polyline points="-23,120 23,120"/>
+<polyline points="-23,144 23,144"/>
+</g>
+<use xlink:href="#ln0" transform="skewX(45)" id="ln1"/>
+<use xlink:href="#ln0" transform="skewY(45)rotate(-90)" id="ln2"/>
+<pattern id="lns" patternUnits="userSpaceOnUse" width="144" height="144">
+<use xlink:href="#ln1"/>
+<use xlink:href="#ln2" transform="translate(72)"/>
+<use xlink:href="#ln2" transform="translate(-72)"/>
+<use xlink:href="#ln1" transform="translate(144)"/>
+<use xlink:href="#ln1" transform="translate(-144)"/>
+</pattern>
+</defs>
+<rect height="340" width="480" fill="url(#lns)"/>
+</svg>
