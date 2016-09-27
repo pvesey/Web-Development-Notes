@@ -432,11 +432,10 @@
 		<p>The display attribute tells the rendering engine how to layout your element.  These are the ones used most often.</p>
 
 		<pre><code class="css">
-		display: none; /* Don't show the element*/
-		display: block; /* Show the element as a block; typically one block above another*/
-		display: inline-block; /* Place elements beside each other*/
-		display: grid; /* Experimental, grid is here to stay!?*/
-
+display: none; /* Don't show the element*/
+display: block; /* Show the element as a block; typically one block above another*/
+display: inline-block; /* Place elements beside each other*/
+display: grid; /* Experimental, grid is here to stay!?*/
 		</code></pre>
 		</section>
 
@@ -447,7 +446,7 @@
 
 		<section>
 		<h2>Why 960?</h2>
-		<p>960 has been around for a while.  Many designers are saying that 960 is too restrictive and that it is time to change.  It has persisted for a number of reasons</p>
+		<p>960 has been around for a while.  It has persisted for a number of reasons</p>
 		<ul>
 			<li>960 is easily divisible by 16 and 12, therefore giving easy 12 column and 16 column layouts</li>
 			<li>Smartphones and Tablets are tracking as the web device of choice</li> 
@@ -490,15 +489,13 @@
 		<h2>Using an External Stylesheet</h2>
 		<p>In order to make use of your css file you simply include a link to your style sheet in the header section of your HTML</p>
 		<pre><code class="html">
-		...
-		&#60;head&#62;
-		&#60;link rel='stylesheet' type='text/css' 
-		        href='mystyle.css'&#62;
-		&#60;/head&#62;
-		...
-		&#60;p&#62;This is some text that I have styled&#60;/p&#62;
-		...
-
+...
+&#60;head&#62;
+	&#60;link rel='stylesheet' type='text/css' href='mystyle.css'&#62;
+&#60;/head&#62;
+...
+&#60;p&#62;This is some text that I have styled&#60;/p&#62;
+...
 		</code></pre>
 		</section>
 
@@ -617,7 +614,7 @@
 	<p>There are 3 main ways to access fonts for webpages</p>
 	<ul>
 		<li>Embedded and Operating System (tends to be OS specific)</li>
-		<li>Google Webfonts, similar to site server but, Google does the hosting</li>
+		<li>Google Webfonts, similar to site server, but Google does the hosting</li>
 		<li>Site Server based specific, that have to be downloaded when browsing</li>
 	</ul>
 	</section>
@@ -667,10 +664,8 @@
 	<h2>Google Fonts Code</h2>
 	<p>HTML is typically:</p>
 	<pre><code class="css">
-	<link rel='stylesheet' type='text/css' 
-	  href='http://fonts.googleapis
-	  .com/css?family=Henny+Penny'>
-
+&lt;link rel='stylesheet' type='text/css' 
+	href='http://fonts.googleapis.com/css?family=Henny+Penny'&gt;
 	</code></pre>
 	</section>
 
@@ -680,8 +675,7 @@
 	<h2>Google Fonts Code</h2>
 	<p>CSS is then typically:</p>
 	<pre><code class="css">
-	font-family: 'Henny Penny';
-
+font-family: 'Henny Penny';
 	</code></pre>
 	<p>The HTML will load the font.  Once loaded the CSS can then use it.  For this to work, the HTML must load the Font before the CSS.</p>
 	</section>
@@ -696,9 +690,8 @@
 	...
 	font-family: 'Henny Penny', cursive;
 	...
-
 	</code></pre>	
-
+	<p>This is a better approach, as it decouples the HTML from the CSS</p>
 	</section>
 
 
@@ -733,11 +726,10 @@
 	<h2>Server Based Fonts  @font-face</h2>
 	<p>Fonts are loaded using CSS @font-face.  Simple syntax is:</p>
 	<pre><code class="css">
-	@font-face {
-	 font-family: teleindicator;
-	 src: url(fnt/teleindicadores1.ttf);
-	}
-
+@font-face {
+ font-family: teleindicator;
+ src: url(fnt/teleindicadores1.ttf);
+}
 	</code></pre>
 	</section>
 
@@ -748,8 +740,7 @@
 	<h2>Server Based Fonts  @font-face</h2>
 	<p>The font can then be called in the normal CSS way using:</p>
 	<pre><code class="css">
-	font-family: teleindicator;	
-
+font-family: teleindicator;	
 	</code></pre>
 	</section>
 
@@ -761,15 +752,14 @@
 	<p>There is an issue however in relation to browser compatibility. Not all browsers implement all of the various font types.</p>  
 	<p>This means that we have to load a number of different font formats in order for our font to be rendered by all browsers.</p>
 	<pre><code class="css">
-	@font-face {
-	 font-family: ralewaythin;
-	 src: 
-	  url(fnt/raleway_thin-webfont.otf) format('opentype'),
-	  url(fnt/raleway_thin-webfont.woff) format('woff'),
-	  url(fnt/raleway_thin-webfont.ttf) format('truetype'),		
-	  url(fnt/raleway_thin-webfont.svg) format('svg');
-	}
-
+@font-face {
+ font-family: ralewaythin;
+ src: 
+  url(fnt/raleway_thin-webfont.otf) format('opentype'),
+  url(fnt/raleway_thin-webfont.woff) format('woff'),
+  url(fnt/raleway_thin-webfont.ttf) format('truetype'),		
+  url(fnt/raleway_thin-webfont.svg) format('svg');
+}
 	</code></pre>
 	</section>
 
@@ -782,10 +772,9 @@
 	<p>We need to provide support for a variety of operating systems.  To achieve this we normally specify a number of fonts in sequence.  When rendering, the browser will look for the first, then the second and finally the third.</p>  
 	<p>In the example below, Arial will be picked up by Windows, Helvetica by iOS, and failing either of those the embedded sans-serif font will be used.</p>
 	<pre><code class="css">
-	h1, h2, h3{
-	font-family: Arial, Helvetica, sans-serif;
-	}
-
+h1, h2, h3{
+font-family: Arial, Helvetica, sans-serif;
+}
 	</code></pre>
 	</section>
 
@@ -810,6 +799,88 @@
 	</section>                                         
 
 </section>
+
+<section>
+	<section>
+		<h2>Bootstrap - Mobile First Design</h2>
+		<ul>
+			<li>Bootstrap was developed by Mark Otto & Jacob Thornton at Twitter in 2010.</li>
+			<li>The name Twitter Bootstrap is sometimes still used.</li>
+			<li>It is a front end framework based on HTML, CSS, and JS.</li>
+			<li>It also uses Less and Sass</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Example</h2>
+		<img src="img/BSsample.jpg" height="450">
+	</section>
+
+	<section>
+		<h2>Mobile First</h2>
+		<p>Mobile First puts small devices at the centre of the design process.  A hierarchy of devices screen sizes from small to large is used.  Bootstrap contains the following:</p>
+		<ul>
+			<li>HTML5, CSS3, and JavaScript</li>
+			<li>12 column grid system</li>
+			<li>Styling for all major, and most minor HTML elements</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Responsive Grid</h2>
+		<p>Responsive functionality by setting column widths for each screen type</p>
+		<ul>
+			<li>xs - eXtra Small, i.e. Phones </li>
+			<li>sm - Small, i.e. Tablets</li>
+			<li>md - Medium Devices, i.e. Desktops &ge; 992px</li>
+			<li>lg - Large Devides, i.e Desktops &ge; 1200px</li>
+		</ul>
+		<pre><code class="html">
+&lt;div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"&gt;...&lt;/div&gt;
+		</code></pre>
+	</section>
+
+	<section>
+		<h2>Default Behaviour</h2>
+		<p>Without setting device columns, Bootstrap will fallback gracefully.  In the examples shown below, only col-md-* was used.</p>
+	</section>
+
+	<section>
+		<h2>Large Screen</h2>
+		<img src="img/bsex1a.jpg" height="450px">
+	</section>
+
+	<section>
+		<h2>Small Screen</h2>
+		<img src="img/bsex1b.jpg" height="450px">
+	</section>
+
+
+	<section>
+		<h2>Getting Boostrap</h2>
+		<ul>
+			<li>Bootstrap can be obtained from <a href="http://getbootstrap.com/getting-started/#download">getbootstrap.com/getting-started/#download</a></li>
+			<li>You can also link to the CDN at <a href="https://www.bootstrapcdn.com/">bootstrapcdn.com</a></li>
+		</ul>
+		<p>Note on CDNs: Be aware that CDNs do not have universal availability.  CDNs hosted by Google are (as of Nov 2015) blocked in China</p>
+	</section>
+
+	<section>
+		<h2>Div Structure</h2>
+		<p>Bootstrap uses a <code class="css">.row</code> class to clear floats.  This approach tends to be easier for novice users to grasp.</p>
+		<pre><code class="html">
+&lt;div class="row"&gt;
+	&lt;div class="col-xs-12 col-md-4"&gt;...&lt;/div&gt;
+	&lt;div class="col-xs-12 col-md-4"&gt;...&lt;/div&gt;
+	&lt;div class="col-xs-12 col-md-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;			
+		</code></pre>
+	</section>
+
+
+
+</section>
+
 
 
 
