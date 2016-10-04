@@ -74,7 +74,7 @@
 
 
 
-
+			<section>
 				<section>
 				<h2>JavaScript</h2>
 				<ul>
@@ -105,7 +105,7 @@
 				<ul>
 					<li>JavaScript can be Server-Side or Client Side</li>
 					<li>We will stick to the far more common Client Side.</li>
-					<li>\textbf{JavaScript is not Java}</li>
+					<li><strong>JavaScript is not Java!</strong></li>
 				</ul>
 				<p>JavaScript can be implemented three ways</p>
 				<ol>
@@ -123,15 +123,15 @@
 				<h2>JavaScript Header Implementation</h2>
 				<p>JavaScript is enclosed in <code>&#60;script&#62;&#60;/script&#62;</code> in HTML</p>
 
-				<pre><code class='js'>
-&#60;head&#62;...
+				<pre><code>
+&#60;head&#62;
   &#60;script&#62;
     function fireAlert()
       {
         alert("I am an alert box!");
       }
     window.onload=fireAlert();
-  &#60;/script&#62;...
+  &#60;/script&#62;
 &#60;/head&#62;
 				</code></pre>
 				</section>
@@ -142,11 +142,11 @@
 
 				<section>
 				<h2>JavaScript Inline Implementation</h2>
-				<pre><code class='js'>
-&#60;body&#62;...
+				<pre><code>
+&#60;body&#62;
  &#60;script&#62;
    document.write('<h2>Driven by JavaScript</h2>');  
- &#60;/script&#62;...
+ &#60;/script&#62;
 &#60;/body&#62;
 				</code></pre>
 				</section>
@@ -158,9 +158,8 @@
 				<section>
 				<h2>JavaScript External File</h2>
 				<p>Using an external file is the most common way to implement JavaScript.  It also greatly enhances the maintainability of your code.  The syntax for HTML5 is:</p>
-				<pre><code class='js'>
+				<pre><code class='html'>
 &#60;script src='js/JavaScript.js'&#62;&#60;/script&#62;
-
 				</code></pre>
 				</section>
 
@@ -198,7 +197,7 @@
 				<section>
 				<h2>JavaScript Alert Box</h2>
 				<p>The Alert box simply displays a message.  No further work is required.  The example below will stop the page load until the user confirms.</p>
-				<pre><code class='js'>
+				<pre><code>
 &#60;head&#62;...
   &#60;script&#62;
     function fireAlert()
@@ -208,15 +207,15 @@
     window.onload=fireAlert();
   &#60;/script&#62;...
 &#60;/head&#62;
-
 				</code></pre>
+				<p>This is often referred to as 'blocking code' as it will block execution of everything else until it's done</p>
 				</section>
 
 
 
 				<section>
 				<h2>JavaScript Confirm Box</h2>
-				<p>A confirm box allows us to get a binary response; either OK or Cancel.  We can then use this information to do other things. </p>
+				<p>A confirm box allows us to get a binary response; either OK or Cancel.  We can then use this information to do other things, such as log the user selection to the console </p>
 
 				<pre><code class='js'>
 var response = confirm('Press OK to continue');
@@ -263,11 +262,11 @@ if (response != null && response != ''){
 				<section>
 				<h2>JavaScript Logical Operators</h2>
 				<p>JavaScript has all of the normal logical Operators that we expect to find </p>
-				<ul>
-					<li><code>&&</code> AND operator</li>
-					<li><code>||</code> OR operator</li>
-					<li><code>!</code> NOT operator</li>
-				</ul>
+				<pre><code class='js'>
+a && b // AND operator
+a || b // OR operator
+a ! b // NOT operator
+				</code></pre>
 				</section>
 
 
@@ -276,16 +275,16 @@ if (response != null && response != ''){
 				<section>
 				<h2>JavaScript Comparison Operators</h2>
 				<p>JavaScript has all of the normal comparison Operators that we expect to find </p>
-				<ul>
-					<li><code>==</code> Equal to</li>
-					<li><code>===</code> Equal to (value and type)</li>
-					<li><code>!=</code> Not Equal to</li>
-					<li><code>!==</code> Not Equal to (value and type)</li>
-					<li><code>></code> Greater than</li>
-					<li><code><</code> Less than</li>
-					<li><code>>=</code> Greater than or equal to</li>
-					<li><code><=</code> Less than or equal to</li> 
-				</ul>
+				<pre><code class='js'>
+a == b // Equal to
+a === b // Equal to (value and type)
+a != b // Not Equal to
+a !== b // Not Equal to (value and type)
+a &gt; b // Greater than
+a &lt; b // Less than
+a &gt;= b // Greater than or equal to
+a &lt;= b // Less than or equal to
+				</code></pre>
 				</section>
 
 
@@ -359,17 +358,17 @@ for (var i = 0; i < 20; i++) {
 				<img class='h350' src="img/devtools.JPG">
 				</section>
 
+
 				<section>
-					<section>
-						<h2>Developer Tools</h2>
-						<p>In Internet Explorer: F12</p>
-						<img class='h300' src="img/IEEventListener.JPG">
-						<p>Note you can preview what your code will look like in older versions of IE by changing the Browser Mode.  It will also send your 	page to the W3C validation service.</p>
-					</section>
-					<section>
-						<img class='h550' src="img/IEEventListener.JPG">
-					</section>
+					<h2>Developer Tools</h2>
+					<p>In Internet Explorer: F12</p>
+					<img class='h300' src="img/IEEventListener.JPG">
+					<p>Note you can preview what your code will look like in older versions of IE by changing the Browser Mode.  It will also send your 	page to the W3C validation service.</p>
 				</section>
+				<section>
+					<img class='h550' src="img/IEEventListener.JPG">
+				</section>
+
 
 				<section>
 				<h2>Practice</h2>
@@ -386,7 +385,7 @@ for (var i = 0; i < 20; i++) {
 				<h2>Questions?</h2>
 				</section>
 
-
+			</section>
 
 
 <!--
@@ -400,11 +399,11 @@ for (var i = 0; i < 20; i++) {
 
 
 
-
+			<section>
 				<section>
 				<h2>Event Listeners and Handlers</h2>
 				<ul>
-					<li>Event Listeners are typically synchronous functions or methods that detect events or actions.  Once an event is detected, the listener normally calls a \textbf{Handler} </li>
+					<li>Event Listeners are typically synchronous functions or methods that detect events or actions.  Once an event is detected, the listener normally calls a <strong>Handler</strong> </li>
 					<li>Event Handlers are functions or methods that are called in response to a listener.  This is where the main work is performed</li>
 					<li>Separating Listeners from Handlers allows for greater flexibility and makes maintenance easier</li>
 				</ul>
@@ -432,7 +431,7 @@ for (var i = 0; i < 20; i++) {
 
 				<section>
 				<h2>DOM Level 2 Implementation</h2>
-				<p>The DOM Level 2 implementation is done entirely from JavaScript, with the exception of the element ID which is necessary for to identify the HTML element, in this case 'W3C'  The JavaScript is below:</p>
+				<p>The DOM Level 2 implementation is done entirely from JavaScript, with the exception of the element ID which is necessary for to identify the HTML element, in this case 'W3C'.</p>
 				<pre><code class='js'>
 document.getElementById('W3C').addEventListener('click', cngColor, false);
 				</code></pre>
@@ -483,7 +482,12 @@ document.getElementById('W3C').attachEvent('onclick', cngColor);
 					<li>Remove an event listener from another HTML element</li>
 				</ul>
 				</section>
+			</section>
 
+
+
+
+			<section>
 
 				<section>
 					<h2>JavaScript Objects</h2>	
@@ -571,7 +575,7 @@ console.log(myCar);
 					</code></pre>
 				</section>
 
-				<section>
+
 					<section>
 						<h2>Prototyping v Adding Properties and Methods</h2>
 						<p>Depends what you want to do:</p>
@@ -611,9 +615,9 @@ myCar.brake = function(){
 console.log(myCar);
 						</code></pre>
 					</section>
-				</section>
 
-
+			</section>
+			<section>
 				<section>
 					<h2>Variable Scope</h2>
 					<p>JavaScript implements 2 scopes</p>
@@ -663,10 +667,10 @@ console.log(d); // changed order as c will break script
 console.log(c);
 					</code></pre>
 				</section>
-
+			</section>
  
 
-
+			<section>
 				<section>
 					<h2>JQuery</h2>
 					<p>JQuery is the most widely used JavaScript Library, by far.</p>
@@ -701,7 +705,7 @@ $("div p.class1");  // combined selection of div and p with a class of class1
 					</code></pre>
 					<a href='https://api.jquery.com/'>https://api.jquery.com/</a>
 				</section>
-
+			</section>
 
 
 
@@ -718,11 +722,19 @@ $("div p.class1");  // combined selection of div and p with a class of class1
 
 <section>
 	<h2>What is ES6?</h2>
+	<img src="img/es6.svg" alt="">
 	<p class="pleft">ES6 is shorthand for ECMAScript 2015.  ECMA => European Computer Manufacturer's Association</p>
 	<p class="pleft">It is called ES6, because its predecessor was ES5..  (ES1 was published in June 1997)</p>
+</section>
+
+<section>
+	<h2>What is ES6?</h2>
+	<img src="img/es6.svg" alt="">
 	<p class="pleft">JavaScript, JScript and ActionScript are implementaitons of ECMAScript</p>
 	<p class="pleft">ES6 is not fully supported by browsers at this time.  Current status can be reviewed at <a href="http://kangax.github.io/compat-table/es6/">http://kangax.github.io/compat-table/es6/</a></p>
 </section>
+
+
 
 
 
