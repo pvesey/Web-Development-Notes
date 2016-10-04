@@ -705,6 +705,48 @@ $("div p.class1");  // combined selection of div and p with a class of class1
 					</code></pre>
 					<a href='https://api.jquery.com/'>https://api.jquery.com/</a>
 				</section>
+
+
+				<section>
+					<h2>JQuery Events</h2>
+					<p>Useful Examples</p>
+					<pre><code style='js'>
+$(selector).click();       // single click
+$(selector).dblclick();    // double click
+$(selector).mouseenter();  // mouse cursor moves over
+$(selector).mouseleave();  // mouse cursor moves off
+$(selector).mousedown();   // mouse button pressed
+$(selector).mouseup();     // mouse button released
+$(selector).hover();       // as mouse moves over and moves off
+$(selector).focus();       // focus obtained
+$(selector).blur();        // focus lost
+
+					</code></pre>
+					<a href='https://api.jquery.com/category/events/'>https://api.jquery.com/category/events/</a>
+				</section>
+
+				<section>
+					<h2>JQuery AJAX</h2>
+					<p>Useful Examples</p>
+					<pre><code style='js'>
+$(#loadDiv).load("moreText.txt");   // loads text into #loadDiv
+
+// Load with callback, typical implementation
+$(#loadDiv).load("moreText.txt", function(responseTxt, status, xhr){
+		if(status =="success")
+			alert("Load Success");
+		if(status == "error")
+			alert("Error: " + xhr.status + " " + xhr.statusText);
+	}
+);  
+
+					</code></pre>
+					<a href='https://api.jquery.com/category/ajax/'>https://api.jquery.com/category/ajax/</a>
+				</section>
+
+
+
+
 			</section>
 
 
