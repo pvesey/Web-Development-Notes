@@ -24,7 +24,7 @@
 
 		<!-- Vesey Notes Custom -->
 		<link rel="stylesheet" href="css/veseyNotes.css">
-		
+
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -55,19 +55,19 @@
 			<div class="slides">
 
 <!--
-% _              _                    _ 
+% _              _                    _
 %| |    ___  ___| |_ _   _ _ __ ___  / |
 %| |   / _ \/ __| __| | | | '__/ _ \ | |
 %| |__|  __/ (__| |_| |_| | | |  __/ | |
 %|_____\___|\___|\__|\__,_|_|  \___| |_|
-%                                       
+%
 -->
 				<section>
 					<h1>Web Development</h1>
 					<h3>Introduction to JavaScript</h3>
 					<p>
 						<small>Paul Vesey</small>
-						<small>Created using <a href="http://lab.hakim.se/reveal-js/">Reveal.js</a></small>						
+						<small>Created using <a href="http://lab.hakim.se/reveal-js/">Reveal.js</a></small>
 					</p>
 					<img class="h250" src="img/jslogo.png">
 				</section>
@@ -92,7 +92,7 @@
 				<ul>
 					<li>JavaScript is a loosely typed language</li>
 					<li>This means that when you declare a variable you do not have to specify its data type</li>
-					<li>Variable scope can be problematic if you do not exercise care.</li>  
+					<li>Variable scope can be problematic if you do not exercise care.</li>
 				</ul>
 				</section>
 
@@ -145,7 +145,7 @@
 				<pre><code>
 &#60;body&#62;
  &#60;script&#62;
-   document.write('<h2>Driven by JavaScript</h2>');  
+   document.write('<h2>Driven by JavaScript</h2>');
  &#60;/script&#62;
 &#60;/body&#62;
 				</code></pre>
@@ -236,7 +236,7 @@ if (response == true){
 var response = prompt('Please enter your name', 'Paul Vesey');
 if (response != null && response != ''){
   console.log(response);
-} 
+}
 				</code></pre>
 				</section>
 
@@ -327,7 +327,7 @@ typeof val;
 
 
 				<section>
-				<h2>Conditional Statement if...else if...else</h2> 
+				<h2>Conditional Statement if...else if...else</h2>
 				<p>Syntax is: </p>
 				<pre><code class='js'>
 if (condition 1) {
@@ -335,7 +335,7 @@ if (condition 1) {
  } else if (condition 2) {
      // code here
  } else {
-     // code here 
+     // code here
  }
 				</code></pre>
 				</section>
@@ -346,7 +346,7 @@ if (condition 1) {
 				<pre><code class='js'>
 for (var i = 0; i < 20; i++) {
      // code here
- } 
+ }
 				</code></pre>
 				<p>Remember to use <code>var</code> when declaring your initial condition.</p>
 				</section>
@@ -375,7 +375,7 @@ for (var i = 0; i < 20; i++) {
 				<p>Implement the following:</p>
 				<ul>
 					<li>Use in line JavaScript to write some text to a <code>div</code> on your page</li>
-					<li>Implement an Alert Box in the header that is triggered by <code>window.onload</code></li> 
+					<li>Implement an Alert Box in the header that is triggered by <code>window.onload</code></li>
 					<li>Implement a Prompt box to get the users name and output to the console and the page</li>
 					<li>Implement a Confirm box and output the user choice to the console if it is 'OK'.</li>
 				</ul>
@@ -389,15 +389,32 @@ for (var i = 0; i < 20; i++) {
 
 
 <!--
-% _              _                    ____  
-%| |    ___  ___| |_ _   _ _ __ ___  |___ \ 
+% _              _                    ____
+%| |    ___  ___| |_ _   _ _ __ ___  |___ \
 %| |   / _ \/ __| __| | | | '__/ _ \   __) |
-%| |__|  __/ (__| |_| |_| | | |  __/  / __/ 
+%| |__|  __/ (__| |_| |_| | | |  __/  / __/
 %|_____\___|\___|\__|\__,_|_|  \___| |_____|
-%                                           
+%
 -->
 
+			<section>
+				<section>
+					<img src="img/nodejs.jpg" alt="NodeJS logo" height="200px">
+					<h2>JavaScript and NodeJS</h2>
+					<p>Make your life easier and install NodeJS on your machine.</p>
+					<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>
+					<p>Once installed you will be able to run your .js against nodejs without the need for a browser</p>
 
+				</section>
+
+				<section>
+					<img src="img/nodejs.jpg" alt="NodeJS logo" height="200px">
+					<p>Make sure node is on your path, and then you will be able to invoke node on any js file by entering:</p>
+					<pre><code class='js'>
+C:\location>node myfile.js
+					</code></pre>
+				</section>
+			</section>
 
 			<section>
 				<section>
@@ -477,7 +494,7 @@ document.getElementById('W3C').attachEvent('onclick', cngColor);
 				<h2>Practice</h2>
 				<p>Attach click events to an HTML div in order to achieve the following:</p>
 				<ul>
-					<li>Fire an alert message when clicked</li> 
+					<li>Fire an alert message when clicked</li>
 					<li>Show or hide an image (toggle functionality)</li>
 					<li>Remove an event listener from another HTML element</li>
 				</ul>
@@ -490,7 +507,7 @@ document.getElementById('W3C').attachEvent('onclick', cngColor);
 			<section>
 
 				<section>
-					<h2>JavaScript Objects</h2>	
+					<h2>JavaScript Objects</h2>
 					<p>JavaScript Objects can be created in a number of ways.</p>
 					<pre><code style="js">
 var myObject = new Object();
@@ -508,10 +525,10 @@ var car = {
 	doors: 4,
 	velocity: 60,
 	faster: function(){
-		return this.velocity + 10;
-	}	
+		return this.velocity += 10;
+	}
 };
-					</code></pre>				
+					</code></pre>
 				</section>
 
 				<section>
@@ -524,9 +541,9 @@ function car(color, doors, velocity){
 	this.velocity = velocity;
 	this.faster = function(){
 		return this.velocity += 10;
-	};	
+	};
 };
-					</code></pre>				
+					</code></pre>
 				</section>
 
 
@@ -548,7 +565,7 @@ myCar.stop();
 myOtherCar.stop();
 console.log(myCar);
 console.log(myOtherCar);
-					</code></pre>				
+					</code></pre>
 
 				</section>
 
@@ -559,7 +576,7 @@ console.log(myOtherCar);
 myCar.constructor.prototype.lightOn = function(){
 		return this.lightsOn = true;
 }
-					</code></pre>	
+					</code></pre>
 
 				</section>
 
@@ -582,9 +599,9 @@ console.log(myCar);
 						<p>If you want to add a property and/or method to all instantiated objects, and all future objects, then use prototyping.</p>
 						<p>If you want to effect one or a small number, then add properties and methods.</p>
 					</section>
-		
+
 					<section>
-						<h2>Ready to run code.</h2>			
+						<h2>Ready to run code.</h2>
 						<pre><code style="js">
 function car(color, doors, velocity){
 	this.color = color;
@@ -592,7 +609,7 @@ function car(color, doors, velocity){
 	this.velocity = velocity;
 	this.faster = function(){
 		return this.velocity += 10;
-	};	
+	};
 };
 
 var myCar = new car('red', 2, 220);
@@ -638,7 +655,7 @@ for (var i = 0; i < 5; i++){
 	var b = 'Global-b ';
 	console.log(a, b, i);
 };
-console.log(a);	
+console.log(a);
 console.log(b);
 console.log(i);
 					</code></pre>
@@ -661,14 +678,14 @@ function myLoop(count){
 };
 var a = 'Global-a';
 var d = myLoop(5);
-console.log(a);	
+console.log(a);
 console.log(b);
 console.log(d); // changed order as c will break script
 console.log(c);
 					</code></pre>
 				</section>
 			</section>
- 
+
 
 			<section>
 				<section>
@@ -698,8 +715,8 @@ $(.classname);                               // JQuery class selection
 $(#idvalue);        // id selection
 $(.classname);      // class selection
 $("div");           // HTML tag selection
-$(*);               // select all elements        
-$("div p.class1");  // combined selection of div and p with a class of class1   
+$(*);               // select all elements
+$("div p.class1");  // combined selection of div and p with a class of class1
 
 //  More information from API documentation.
 					</code></pre>
@@ -738,7 +755,7 @@ $(#loadDiv).load("moreText.txt", function(responseTxt, status, xhr){
 		if(status == "error")
 			alert("Error: " + xhr.status + " " + xhr.statusText);
 	}
-);  
+);
 
 					</code></pre>
 					<a href='https://api.jquery.com/category/ajax/'>https://api.jquery.com/category/ajax/</a>
@@ -754,12 +771,12 @@ $(#loadDiv).load("moreText.txt", function(responseTxt, status, xhr){
 
 
 <!--
-% ____                 _                   _   _       _            
-%|  _ \ __ _ _ __   __| | ___  _ __ ___   | \ | | ___ | |_ ___  ___ 
+% ____                 _                   _   _       _
+%|  _ \ __ _ _ __   __| | ___  _ __ ___   | \ | | ___ | |_ ___  ___
 %| |_) / _` | '_ \ / _` |/ _ \| '_ ` _ \  |  \| |/ _ \| __/ _ \/ __|
 %|  _ < (_| | | | | (_| | (_) | | | | | | | |\  | (_) | ||  __/\__ \
 %|_| \_\__,_|_| |_|\__,_|\___/|_| |_| |_| |_| \_|\___/ \__\___||___/
-%                                                                   
+%
 -->
 
 <section>
@@ -817,7 +834,7 @@ $(#loadDiv).load("moreText.txt", function(responseTxt, status, xhr){
 <h2>Functions JavaScript</h2>
 <p>JavaScript has three main outputs</p>
 <ol>
-	<li>Functions</li> 
+	<li>Functions</li>
 	<li>Anonymous Functions</li>
 	<li>Browser console.</li>
 </ol>
@@ -859,7 +876,3 @@ $(#loadDiv).load("moreText.txt", function(responseTxt, status, xhr){
 
 	</body>
 </html>
-
-
-
-
