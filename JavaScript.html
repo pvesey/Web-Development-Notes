@@ -340,6 +340,22 @@ if (condition 1) {
 				</code></pre>
 				</section>
 
+
+				<section>
+					<h2>Conditional (ternary) Operator</h2>
+					<p>A Ternary operator is shorthand for an If-Else block </p>
+					<pre><code class='js'>
+// Condition? ifTrue : ifFalse
+
+var Career  = JavaScript == "Awesome"? ("Web Developer") : ("Embedded Systems")
+					</code></pre>
+				</section>
+
+
+
+
+
+
 				<section>
 				<h2>For Loop</h2>
 				<p>Syntax is: <code>for(initial; final; step){...}</code></p>
@@ -350,6 +366,125 @@ for (var i = 0; i < 20; i++) {
 				</code></pre>
 				<p>Remember to use <code>var</code> when declaring your initial condition.</p>
 				</section>
+
+				<section>
+					<h2>Arrays</h2>
+					<p>There are two syntaxes for creating arrays in JavaScript.  You should only use the first one.  The second methodology can be problematic</p>
+					<pre><code class='js'>
+var myArray = ["This", "Then", "That"];
+
+var neverUseThis = new Array("Dont", "Use", "This", "Constructor");
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Array Methods (Most Commonly Used)</h2>
+					<pre><code class='js'>
+myArray.length      // returns number of elements
+myArray.pop()       // removes the last element and returns its value
+myArray.push()      // Adds a new element to an array
+myArray.reverse()   // Reverse the order of elements in the array
+myArray.concat()    // Joins two or more arrays together
+myArray.find()      // Returns the first element of the array that passes a test
+myArray.forEach()   // Calls a function for each element in the array
+myArray.indexOf()   // Search for an element and returns its position
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h2>Arrays can contain anything!</h2>
+					<p>JavaScript Arrays can contain Primitives, Objects and Functions.  Moreover, they can contain a mix of them too </p>
+					<pre><code class='js'>
+function car(color, doors, velocity){
+	this.color = color;
+	this.doors = doors;
+};
+
+function printMessage(){
+  var msg = "Enter some message here!"
+};
+
+var primitive = 1024;
+functionCar = new car("Green", 2, 70);
+var myArray = [primitive, printMessage, functionCar];
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h2>JavaScript Singleton Pattern</h2>
+					<pre><code class='js'>
+var Singleton = (function () {
+    var instance;
+    function createInstance() {
+        var object = new Object("I am the instance");
+        return object;
+    }
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = createInstance();
+            }
+            return instance;
+        }
+    };
+})();
+var instance1 = Singleton.getInstance();
+var instance2 = Singleton.getInstance();
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>JavaScript Factory Pattern</h2>
+					<pre><code class='js'>
+function Factory(){
+    this.createFord = function (type) {
+        var model;
+
+        if (type === "Fiesta") {
+            model = new Fiesta();
+        } else if (type === "Focus") {
+            model = new Focus();
+        } else if (type === "Mondeo") {
+            model = new Mondeo();
+        }
+
+        model.type = type;
+
+        return model;
+    }
+}
+
+var Fiesta = function() {
+    this.engine = "1.2 litre";
+    this.doors = 3;
+};
+
+var Focus = function() {
+    this.engine = "1.6 litre";
+    this.doors = 5;
+};
+
+var Mondeo = function() {
+    this.engine = "2.0 litre";
+    this.doors = 4;
+};
+
+
+var cars = [];
+var factory = new Factory();
+
+cars.push(factory.createFord("Fiesta"));
+cars.push(factory.createFord("Focus"));
+cars.push(factory.createFord("Mondeo"));
+
+console.log(cars);
+					</code></pre>
+				</section>
+
+
+
 
 
 				<section>
