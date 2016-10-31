@@ -1126,40 +1126,139 @@ Subheadings:
 						<h2>Color Blindness</h2>
 						<p>There are three main types of color blindness</p>
 						<ul>
-							<li>T1 Protanopia</li>
-							<li>T2 Deuteranopia</li>
-							<li>T3 Tritanopia</li>
+							<li>Protanopia (red perception issue)</li>
+							<li>Deuteranopia (green perception issue)</li>
+							<li>Tritanopia (blue perception issue)</li>
 						</ul>
-						<p>The following simulations are driven by <a href="http://www.daltonize.org">daltonize.org</a></p>
+						<p>The following simulations are simplifications of color blindness perception.</a></p>
 					</section>
 					<section>
-						<h2>Type 1</h2>
-
-							<script type="text/javascript">
-								$(document).ready(function() {
-									var cbimage = new Image();
-									cbimage.src = "img/cblindImage.jpg";
-									Color.Vision.Simulate(cbimage, {
-	        							type: "Protanope",
-	        							callback: function(canvas) {
-	            							document.body.appendChild(canvas);
-	        							}})
-								});
-
-							</script>
-						<p>Image Source <a href="https://pixabay.com/en/modern-art-fractal-background-971594/">https://pixabay.com/en/modern-art-fractal-background-971594/</a></p>
-					</section>
-					<section>
-						<h2>Type 2</h2>
-
-						<p>Image Source <a href="https://pixabay.com/en/modern-art-fractal-background-971594/">https://pixabay.com/en/modern-art-fractal-background-971594/</a></p>
-					</section>
-					<section>
-						<h2>Type 3</h2>
-
-						<img src="img/cblindImage.jpg">
+						<h2>Original Image</h2>
+						<img src="img/cblindImage.jpg" width="660px">
 						<p>Image Source <a href="https://pixabay.com/en/modern-art-fractal-background-971594/">https://pixabay.com/en/modern-t-fractal-background-971594/</a></p>
 					</section>
+					<section>
+						<h2>Protanopia</h2>
+						<h3>(Red perception issue)</h3>
+						<script type="text/javascript">
+						$(document).ready(function() {
+							var container = $("#protan");
+							var protanctx = container.get(0).getContext("2d");
+
+							var protanimage = new Image();
+							protanimage.src = "img/cblindImage.jpg";
+							$(protanimage).load(function() {
+
+								protanctx.drawImage(protanimage, 0, 0, 660, 440);
+
+								var imageData = protanctx.getImageData(0, 0, 660, 440);
+								var pixels = imageData.data;
+								var numPixels = pixels.length;
+
+								// Clear the image
+								protanctx.clearRect(0, 0, container.width(), container.height());
+
+								// Access and change pixel values
+								for (var i = 0; i < numPixels; i++) {
+									var average = (pixels[i*4]+pixels[i*4+1]+pixels[i*4+2])/3;
+									pixels[i*4] = average; // Red
+									pixels[i*4+1] = pixels[i*4+1]; // Green
+									pixels[i*4+2] = pixels[i*4+2]; // Blue
+								};
+
+								// Draw image data to the canvas
+								protanctx.putImageData(imageData, 0, 0);
+
+							});
+						});
+						</script>
+						<canvas id="protan" width="660" height="440">
+								Your browser does not support canvas
+						</canvas>
+					</section>
+
+
+
+					<section>
+						<h2>Deuteranopia</h2>
+						<h3>(Green perception issue)</h3>
+						<script type="text/javascript">
+						$(document).ready(function() {
+							var container = $("#deuter");
+							var deuterctx = container.get(0).getContext("2d");
+
+							var deuterimage = new Image();
+							deuterimage.src = "img/cblindImage.jpg";
+							$(deuterimage).load(function() {
+
+								deuterctx.drawImage(deuterimage, 0, 0, 660, 440);
+
+								var imageData = deuterctx.getImageData(0, 0, 660, 440);
+								var pixels = imageData.data;
+								var numPixels = pixels.length;
+
+								// Clear the image
+								deuterctx.clearRect(0, 0, container.width(), container.height());
+
+								// Access and change pixel values
+								for (var i = 0; i < numPixels; i++) {
+									var average = (pixels[i*4]+pixels[i*4+1]+pixels[i*4+2])/3;
+									pixels[i*4] = pixels[i*4]; // Red
+									pixels[i*4+1] = average; // Green
+									pixels[i*4+2] = pixels[i*4+2]; // Blue
+								};
+
+								// Draw image data to the canvas
+								deuterctx.putImageData(imageData, 0, 0);
+
+							});
+						});
+						</script>
+						<canvas id="deuter" width="660" height="440">
+								Your browser does not support canvas
+						</canvas>
+					</section>
+					
+					<section>
+						<h2>Tritanopia</h2>
+						<h3>(Blue perception issue)</h3>
+						<script type="text/javascript">
+						$(document).ready(function() {
+							var container = $("#tritan");
+							var tritanctx = container.get(0).getContext("2d");
+
+							var tritanimage = new Image();
+							tritanimage.src = "img/cblindImage.jpg";
+							$(tritanimage).load(function() {
+
+								tritanctx.drawImage(tritanimage, 0, 0, 660, 440);
+
+								var imageData = tritanctx.getImageData(0, 0, 660, 440);
+								var pixels = imageData.data;
+								var numPixels = pixels.length;
+
+								// Clear the image
+								tritanctx.clearRect(0, 0, container.width(), container.height());
+
+								// Access and change pixel values
+								for (var i = 0; i < numPixels; i++) {
+									var average = (pixels[i*4]+pixels[i*4+1]+pixels[i*4+2])/3;
+									pixels[i*4] = pixels[i*4]; // Red
+									pixels[i*4+1] = pixels[i*4+1]; // Green
+									pixels[i*4+2] = average; // Blue
+								};
+
+								// Draw image data to the canvas
+								tritanctx.putImageData(imageData, 0, 0);
+
+							});
+						});
+						</script>
+						<canvas id="tritan" width="660" height="440">
+								Your browser does not support canvas
+						</canvas>
+					</section>
+
 
 
 
@@ -1352,7 +1451,8 @@ Subheadings:
 			});
 
 		</script>
-
+		<script src="js/Color.Vision.Daltonize.js"></script>
+		<script src="js/Color.Vision.Simulate.js"></script>
 	</body>
 </html>
 
