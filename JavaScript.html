@@ -768,6 +768,30 @@ myCar.brake = function(){
 console.log(myCar);
 						</code></pre>
 					</section>
+					<section>
+					<h2>JavaScript Closure</h2>
+					<p>A 'Closure' is simply a function that has a reference to a private variable</p>
+						<code><pre>
+function car(color, doors, velocity){
+		
+	var _wheels = 4; // underscore, convention for private variables
+
+	this.color = color;
+	this.doors = doors;
+	this.velocity = velocity;
+	this.faster = function(){
+		return this.velocity += 10;
+	};
+
+	this.getWheels = function(){
+		return _wheels;
+	}
+};
+							</code></pre>
+						</section>
+
+
+
 
 			</section>
 			<section>
@@ -833,8 +857,11 @@ catch(err) {
 }
 					</code></pre>
 				</section>
-			</section>
 
+
+
+
+			</section>
 
 			<section>
 				<section>
