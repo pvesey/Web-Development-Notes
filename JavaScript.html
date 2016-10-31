@@ -412,6 +412,7 @@ var myArray = [primitive, printMessage, functionCar];
 				</section>
 
 
+
 				<section>
 					<h2>JavaScript Singleton Pattern</h2>
 					<pre><code class='js'>
@@ -817,6 +818,19 @@ console.log(a);
 console.log(b);
 console.log(d); // changed order as c will break script
 console.log(c);
+					</code></pre>
+				</section>
+
+				<section>
+				<h2>JavaScript Try-Catch</h2>
+				<p>In the variable scope example, the code blew up when we tried to log a variable that was undefined.  We can control how our programs fail by encapsulating vunerable code into a 'try-catch'</p>
+					<pre><code style="js">
+try{
+	console.log("Variable c: " + c);
+}
+catch(err) {
+	console.log(err);
+}
 					</code></pre>
 				</section>
 			</section>
