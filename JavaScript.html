@@ -705,6 +705,7 @@ console.log(myOtherCar);
 
 				</section>
 
+
 				<section>
 					<h2>.constructor Property</h2>
 					<p>You can find the constructor function of an object by accessing its 'constructor' property.  This can be useful when used in conjunction with prototyping</p>
@@ -789,6 +790,61 @@ function car(color, doors, velocity){
 };
 							</code></pre>
 						</section>
+						<section>
+							<h2>JSON - JavaScript Object Notation</h2>
+							<ul>
+								<li>JSON is a simple data exchange format, in plain text.</li>
+								<li>You can use JSON to pass data to and from your server.</li>
+								<li>You can put JSON into Cookies.</li>
+								<li>With Node, you can save data to the hard disk for later recovery and use.</li>
+							</ul>
+						</section>
+						<section>	
+							<h2>JSON Nodejs Example</h2>
+							<pre><code style='js'>
+function car(color, doors, velocity){
+	...
+	code removed; see previous examples
+	...
+};
+
+myCar = new car("black", 2, 100);
+
+myCarJSON = JSON.stringify(myCar);
+console.log(myCar);
+console.log(myCarJSON); // note no functions or private variables
+							</code></pre>
+						</section>
+						<section>
+							<h2>JSON Limitations</h2>
+							<ul>
+								<li>Functions will not be preserved. Logic is too hard to convert to strings</li>
+								<li>Private variables, like those from a closure, will not be preserved.</li>
+							</ul>
+						</section>
+						<section>	
+							<h2>Reading Back JSON</h2>
+							<pre><code style='js'>
+var fs = require('fs');  
+
+// Async file read
+fs.readFile('myCar.json', (err, data) => { 
+  if (err) throw err;
+  console.log('Data returned from disk:');
+  console.log(data);
+  console.log('Data parsed into JSON format');
+  var object = JSON.parse(data)
+  console.log(object, object.color, object.doors, object.velocity);
+});
+
+console.log("This will be done first!");
+							</code></pre>
+						</section>
+
+
+
+
+
 
 
 
