@@ -1,0 +1,497 @@
+/*
+ ____                _   
+|  _ \ ___  ___  ___| |_ 
+| |_) / _ \/ __|/ _ \ __|
+|  _ <  __/\__ \  __/ |_ 
+|_| \_\___||___/\___|\__|
+                         
+*/		
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+
+/*
+ _____                                        _           
+|_   _|   _ _ __   ___   __ _ _ __ __ _ _ __ | |__  _   _ 
+  | || | | | '_ \ / _ \ / _` | '__/ _` | '_ \| '_ \| | | |
+  | || |_| | |_) | (_) | (_| | | | (_| | |_) | | | | |_| |
+  |_| \__, | .__/ \___/ \__, |_|  \__,_| .__/|_| |_|\__, |
+      |___/|_|          |___/          |_|          |___/ 
+*/
+
+body {
+	background-color: gray;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, san-serif;
+	cursor: default;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+
+
+
+
+article ul {
+	margin-left: 20px;
+}
+
+
+
+article a {
+	color: #FFD300;
+}
+
+article a:hover {
+	font-weight: bold;
+}
+
+
+
+
+
+.code {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+p{
+	padding: 5px;
+}
+
+p:first-child{
+	background-color: purple;
+	padding-top: 10px;
+}
+p:last-child{
+	color:#000000;
+	background-color: #00FF00;
+}
+p:nth-child(2){
+	color: #000000;
+	background-color: #FF0000;
+	padding-bottom: 10px;
+}
+
+
+#formula, #keywordOdd, #keywordEven{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 150px;
+	margin-left: 150px;
+}
+
+#formula li:nth-child(3n){
+	color: #000000;
+	background-color: #FF0000;
+}
+
+#formula li:first-child{
+	color: #000000;
+	background-color: #00FF00;
+}
+
+#formula li:last-child{
+	color: #000000;
+	background-color: #0000FF;
+}
+
+#keywordOdd li:nth-child(odd){
+	color: #000000;
+	background-color: #FF0000;
+}
+
+
+#keywordEven li:nth-child(even){
+	color: #000000;
+	background-color: #FF0000;
+}
+
+
+img{
+	width:100%;
+}
+
+
+
+/*
+ _   _               __  __                  
+| \ | | __ ___   __ |  \/  | ___ _ __  _   _ 
+|  \| |/ _` \ \ / / | |\/| |/ _ \ '_ \| | | |
+| |\  | (_| |\ V /  | |  | |  __/ | | | |_| |
+|_| \_|\__,_| \_/   |_|  |_|\___|_| |_|\__,_|
+                                             
+*/
+
+nav{
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+nav ul {
+	font-size: 12pt;		
+	font-weight: bold;
+	list-style-type: none;
+}
+		
+nav ul li {
+	display: block;
+	width: 120px;
+	background-color: #FFFFFF;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-align: center;
+	float: left;
+}
+	
+nav  ul li  .rmenu {
+	display: none;
+}
+	
+nav ul a {
+	display:block;
+	width: 120px;
+	text-decoration: none;
+	height: 25px;
+	line-height: 25px;
+	background-color: #FFFFFF;
+	color: #FF0000;
+}
+	
+nav  ul li.rmenu {
+	display: none;
+}
+	
+nav ul li:hover a:hover {
+	color: #FFFFFF;
+	background-color: #FF0000;
+}
+		
+li .current {
+	color: #000000;
+	background-color: #FFFF00;
+}
+
+
+
+
+
+/*						 
+ ____            _        _                            _   
+| __ )  __ _ ___(_) ___  | |    __ _ _   _  ___  _   _| |_ 
+|  _ \ / _` / __| |/ __| | |   / _` | | | |/ _ \| | | | __|
+| |_) | (_| \__ \ | (__  | |__| (_| | |_| | (_) | |_| | |_ 
+|____/ \__,_|___/_|\___| |_____\__,_|\__, |\___/ \__,_|\__|
+                                     |___/                 
+*/	
+
+.grd1,
+.grd2,
+.grd3,
+.grd4,
+.grd5,
+.grd6,
+.grd7,
+.grd8,
+.grd9,
+.grd10,
+.grd11,
+.grd12{
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #0C5DA5;
+}
+
+
+#container {
+	width: 960px;
+	background-color: #172CAF;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.grd1 {
+	width: 40px;
+}
+.grd2 {
+	width: 120px;
+}
+.grd3 {
+	width: 200px;
+}
+.grd4 {
+	width: 280px;
+}
+.grd5 {
+	width: 360px;
+}
+.grd6 {
+	width: 440px;
+}
+.grd7 {
+	width: 520px;
+}
+.grd8 {
+	width: 600px;
+}
+.grd9 {
+	width: 680px;
+}
+.grd10 {
+	width: 760px;
+}
+.grd11{
+	width: 840px;
+}
+.grd12 {
+	width: 920px;
+}
+
+
+
+.clear {
+	clear: both;
+}
+
+
+
+.tl{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.tr{
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.bl1{
+	padding-left: 90px
+}
+.bl2{
+	padding-left: 170px
+}
+.bl3{
+	padding-left: 250px
+}
+.bl4{
+	padding-left: 330px
+}
+.bl5{
+	padding-left: 410px
+}
+.bl6{
+	padding-left: 490px
+}
+.bl7{
+	padding-left: 570px
+}
+.bl8{
+	padding-left: 650px
+}
+.bl9{
+	padding-left: 730px
+}
+.bl10{
+	padding-left: 810px
+}
+.bl11{
+	padding-left: 890px
+}
+
+
+
+.br1{
+	padding-right: 90px
+}
+.br2{
+	padding-right: 170px
+}
+.br3{
+	padding-right: 250px
+}
+.br4{
+	padding-right: 330px
+}           
+.br5{       
+	padding-right: 410px
+}           
+.br6{       
+	padding-right: 490px
+}           
+.br7{       
+	padding-right: 570px
+}           
+.br8{       
+	padding-right: 650px
+}           
+.br9{       
+	padding-right: 730px
+}           
+.br10{      
+	padding-right: 810px
+}           
+.br11{      
+	padding-right: 890px
+}           
+
+
+.stack{
+	display: block;
+	clear: both;
+}
+
+
+
+div #resize1 {
+	height: 600px;
+	background-size: 200%;
+	background-image: url('../img/ancient.jpg'); 
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+	background-origin: padding;
+}
+
+div #resize2 {
+	background-image: url('../img/ancient.jpg');
+	background-size: cover;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+}
+
+
+div #sprite1 {
+	background-image: url('../img/abirds.png');
+	height: 100px;
+	width: 100px;
+	background-position: -12px -118px;
+}
+
+
+div #sprite1:hover {
+	background-position: -118px -118px;
+}
+
+div #sprite2 {
+	background-image: url('../img/abirds.png');
+	height: 35px;
+	width: 35px;
+	background-position: -503px -335px;
+}
+
+
+div #sprite2:hover {
+	background-image: url('../img/abirds.png');
+	height: 35px;
+	width: 35px;
+	background-position: -503px -300px;
+}
+
+
+
+div #chimera {
+	background-image: url('../img/ancient.jpg');
+	height: 200px;
+	width: 200px;
+	background-position: -1073px -664px
+}
+
+
+/*						 
+ __  __          _ _          ___                  _           
+|  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___ 
+| |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| |/ _ \/ __|
+| |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |  __/\__ \
+|_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|  |_|\___||___/
+                                                               
+*/								 
+
+
+@media (max-width: 481px){
+		#container {
+			width: 440px;
+		}
+
+		.grd1, .grd2,
+		.grd3, .grd4,
+		.grd5, .grd6,
+		.grd7, .grd8,
+		.grd9, .grd10,
+		.grd11,.grd12{
+			display: block;
+			float: left;
+		}
+
+		.bl1, .br1,
+		.bl2, .br2,
+		.bl3, .br3,
+		.bl4, .br4,
+		.bl5, .br5,
+		.bl6, .br6,
+		.bl7, .br7,
+		.bl8, .br8,
+		.bl9, .br9,
+		.bl10, .br10,
+		.bl11, .br11{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.grd6,
+		.grd7,
+		.grd8, 
+		.grd9,
+		.grd10,
+		.grd11,
+		.grd12{
+			width: 400px;
+		}
+
+		nav{
+			float: left;
+		}
+	
+		nav ul li{
+			margin-left: 0px;
+			margin-right: 0px;
+			width: 420px;
+			display: none;
+ 		}
+		
+		nav  ul li.rmenu {
+			display: block;
+		}	
+		nav ul li a{
+			width: 420px;
+			height: 26px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+ 		}
+		
+		nav ul:hover li {
+			display: block;
+		}
+}
+
+
+
+
+
+
+
