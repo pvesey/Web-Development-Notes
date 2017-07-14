@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 
@@ -432,10 +430,11 @@
 		<p>The display attribute tells the rendering engine how to layout your element.  These are the ones used most often.</p>
 
 		<pre><code class="css">
-display: none; /* Don't show the element*/
-display: block; /* Show the element as a block; typically one block above another*/
-display: inline-block; /* Place elements beside each other*/
-display: grid; /* Experimental, grid is here to stay!?*/
+display: none; /* Don't show the element */
+display: block; /* Show the element as a block; typically one block above another */
+display: inline-block; /* Place elements beside each other */
+display: grid; /* Grid is here to stay */
+display: flex; /* Flexbox layouts */
 		</code></pre>
 		</section>
 
@@ -579,6 +578,71 @@ display: grid; /* Experimental, grid is here to stay!?*/
 %| |__|  __/ (__| |_| |_| | | |  __/  ___) |
 %|_____\___|\___|\__|\__,_|_|  \___| |____/ 
  -->                                          
+
+<section>
+	<section>
+		<h2>Flexbox</h2>
+		<ul>
+			<li>Flexbox is a system that allows divs to be arranged in a flexible way, in that they can grow and shrink as necessary</li>
+			<li>it is similar to setting %age widths, but a lot more powerful</li>
+			<li>Flexbox also handles vertical height, and centering very well, something that traditional css struggles with.</li>
+			<li>You can also use Flexbox for ordering divs</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Main Flexbox concepts</h2>
+		<ul>
+			<li>A container div is required</li>
+			<li>div widths are set as fractions or </li>
+			<li></li>
+		</ul>
+
+	</section>
+
+	<section>
+		<h2>Ordering divs with Flexbox</h2>
+		<p>You simply need to select a div and set an order on it.  Here I have created some classes that I can apply to a div in html.</p>
+		<pre><code class="css">
+#CSS
+.order-1{order: 1;}
+.order-2{order: 2;}
+.order-3{order: 3;}
+#HTML
+&#60;div class='row'&#62;
+	&#60;div class='col-3 order-3'&#62;&#60;h1&#62;Renders Third&#60;/h1&#62;&#60;/div&#62;
+	&#60;div class='col-3 order-1'&#62;&#60;h1&#62;Renders First&#60;/h1&#62;&#60;/div&#62;
+	&#60;div class='col-3 order-2'&#62;&#60;h1&#62;Renders Second&#60;/h1&#62;&#60;/div&#62;
+&#60;/div&#62;
+
+		</code></pre>
+	</section>
+
+
+</section>
+
+<section>
+	<section>
+		<h2>CSS4 Variables</h2>
+		<p>CSS4 introducted variables to the CSS syntax.  </p>
+				<pre><code class="css">
+:root{
+	--color1: #990000;
+	--color2: #009900;
+}
+.color1{
+	background-color: var(--color1)
+}
+.color2{
+	background-color: var(--color2)
+}
+		</code></pre>
+	</section>
+</section>
+
+
+
+
 		
 <section>
 	<section>
