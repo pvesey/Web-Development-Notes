@@ -17,6 +17,9 @@
 		<link rel="stylesheet" href="reveal/css/reveal.css">
 		<link rel="stylesheet" href="reveal/css/theme/black.css" id="theme">
 
+		<link rel="stylesheet" href="./css/veseyNotes.css">
+
+
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
 
@@ -582,8 +585,19 @@ display: flex; /* Flexbox layouts */
 <section>
 	<section>
 		<h2>Flexbox</h2>
+		<p class="pleft">Flexbox is an element layout system that was introduced in CSS3.  It is well supported by the major browsers, with the exception of IE11.  This link to <a href="https://caniuse.com/#feat=flexbox" target="_blank">caniuse.com/#feat=flexbox</a> will show the current status of support.</p>
+		<p class="pleft">Flexbox has two main uses:</p>
 		<ul>
-			<li>Flexbox is a system that allows divs to be arranged in a flexible way, in that they can grow and shrink as necessary</li>
+			<li>div Layout</li>
+			<li>div Ordering</li>
+		</ul>
+	</section>
+
+
+	<section>
+		<h2>Flexbox</h2>
+		<ul>
+			<li>Flexbox allows divs to grow and shrink as necessary</li>
 			<li>it is similar to setting %age widths, but a lot more powerful</li>
 			<li>Flexbox also handles vertical height, and centering very well, something that traditional css struggles with.</li>
 			<li>You can also use Flexbox for ordering divs</li>
@@ -594,8 +608,9 @@ display: flex; /* Flexbox layouts */
 		<h2>Main Flexbox concepts</h2>
 		<ul>
 			<li>A container div is required</li>
-			<li>div widths are set as fractions or </li>
-			<li></li>
+			<li>div widths are set as fractions or percentages of the container div.</li>
+			<li>The divs can then be arranged in various ways, such as columns, rows, reversed etc.</li>
+			<li>It is best to follow examine the markup in the notes.</li>
 		</ul>
 
 	</section>
@@ -621,6 +636,65 @@ display: flex; /* Flexbox layouts */
 
 </section>
 
+
+<section>
+	<section>
+		<h2>CSS Native Grid</h2>
+		<p>CSS has a native grid system that is now well supported by the major browsers.  This link to <a href="https://caniuse.com/#feat=css-grid" target="_blank">caniuse.com/#feat=css-grid</a> will show the current status of support.</p>
+		<p>It is worth noting that the native grid system can be responsive, and exhibit many of the attribues of flexbox.</p>
+	</section>
+
+
+	<section>
+		<h2>CSS Native Grid</h2>
+		<p class="pleft">Grid is instigated using the display attribute.  Then the column structure has to be defined in terms of pixels, fractions or other supported units.  From there the system will layout the child divs according to the specified grid pattern.</p>
+		<pre><code class="css">
+.cols{
+	display: grid;
+	grid-auto-rows: minmax(100px, auto);
+}
+.two-cols{
+	grid-template-columns: 1fr 1fr;
+}
+.three-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+		</code></pre>
+	</section>
+
+	<section>
+		<h2>Flexbox or Grid</h2>
+		<p class="pleft">Each system has its own strengths and weaknesses. It is not a case of one sytem is better than the other; it is what is most appropriate for your particular use case. </p>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</section>
+
+	
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section>
 	<section>
 		<h2>CSS4 Variables</h2>
@@ -639,6 +713,11 @@ display: flex; /* Flexbox layouts */
 		</code></pre>
 	</section>
 </section>
+
+
+
+
+
 
 
 
